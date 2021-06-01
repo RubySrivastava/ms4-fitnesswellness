@@ -1,6 +1,44 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-contianer">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
-<h1 class="display-4 text-success">Fitness Wellness!</h1>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-6 col-md-6 my-auto">
+                <h1 class="display-8 text-uppercase">
+                    this summer's best deal
+                </h1>
+                <h2 class="">
+                    Train for a full 4 months for only SEK 799!
+                </h2>
+                <div class="my-5">
+                    <h4>
+                        <a href="" class="btn btn-ls rounded-0 text-uppercase py-3">Register Now</a>
+                    </h4>
+                </div>
+            </div>    
+        </div>
+        <div class="row h-100">
+            <div class="col-6 col-md-6 my-auto">
+                <h2 class="text-uppercase">
+                    become one of our member
+                </h2>
+            </div>
+            <div class="col-6 col-md-6 my-auto">
+                <h2 class="text-uppercase">
+                    get started from sek 299/month
+                </h2>
+            </div>        
+        </div>
+
+    </div>
+
 {% endblock %}
