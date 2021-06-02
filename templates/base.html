@@ -37,37 +37,7 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-                <a href="{% url 'home' %}" class="navbar-brand active">Fitness Wellness</a>
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link " href="">Our Gym</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="">Membership</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="">Sign In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="">Sign Up</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </nav>
+        {% include 'includes/main-nav.html' %}
     </header>
 
     {% if messages %}
@@ -78,42 +48,7 @@
     {% endblock %}
     
     <footer class="footer footer-div container-fluid mt-auto ">
-        <div id="footer-details" class="row">
-            <!--Copyright-->
-            <div class="col-sm-6">
-                <h5 class="uppercase general-sub">copyright<i class="fa fa-copyright list-inline-item"
-                        aria-hidden="true"></i>2021Ruby</h5>
-            </div>
-            <!--Social Links-->
-            <div class="col-sm-6">
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://www.facebook.com">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://www.twitter.com">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://www.instagram.com">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://www.youtube.com">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        {% include 'includes/footer.html' %}
     </footer>
 
     {% block postloadjs %}
