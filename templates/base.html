@@ -37,13 +37,37 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex navbar navbar-brand">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link">
-                    <h2>Fitness Wellness</h2>
-                </a>
-            </div>
-        </div>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+                <a href="{% url 'home' %}" class="navbar-brand active">Fitness Wellness</a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="">Our Gym</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="">Membership</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="">Sign Up</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
     </header>
 
     {% if messages %}
