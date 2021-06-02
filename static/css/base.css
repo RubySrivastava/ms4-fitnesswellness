@@ -5,7 +5,7 @@ html {
 body {
 	background: url('/media/homepage_background.jpg') no-repeat center center fixed;
 	background-size: cover;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 56px);
     color: #343735;
     font-family: "rationale";
 }
@@ -102,13 +102,6 @@ body {
 }
 /*End Footer*/
 
-
-
-
-
-
-
-
 /* --------------------------------- Media queries */
 
 /* Slightly larger container on xl screens */
@@ -131,4 +124,39 @@ body {
     .header-container {
         padding-top: 164px;
     }
+}
+
+.home-text {
+    margin-top: 120px;
+    color: #ffffff;
+}
+.header-text {
+    font-size: 40px;
+}
+.para-text {
+    font: "expo";
+    font-size: 14px;
+}
+.block-text {
+    margin-top: 130px;
+    color: #ffffff;
+    font: "expo";
+    font-size: 20px;
+    padding: 20px;
+    
+}
+.bg-col {
+    background-color: rgb(52,55,53,0.5);
+}
+.btn-green {
+    background-color: #54b848;
+    color: #ffffff;
+    margin:10px;
+}
+.icon-arrow {
+    color: #54b848;
+    float: right;
+    position: absolute;
+    right: 30px;
+    bottom: 27px;
 }
