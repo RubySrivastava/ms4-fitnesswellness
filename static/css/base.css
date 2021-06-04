@@ -3,9 +3,7 @@ html {
 }
 
 body {
-	background: url('/media/homepage_background.jpg') no-repeat center center fixed;
-	background-size: cover;
-    height: calc(100vh - 56px);
+    height: calc(100vh - 78px);
     color: #343735;
     font-family: "rationale";
 }
@@ -67,7 +65,6 @@ body {
   background-color:#343735; 
   color: #ffffff;
   font-family: 'expo';
-  min-height: 80px;
   width: 100%;
   margin-top: auto;
 }
@@ -125,7 +122,18 @@ body {
         padding-top: 164px;
     }
 }
-
+/*Home Page*/
+.home-container {
+  background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: dimgrey;
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
 .home-text {
     margin-top: 120px;
     color: #ffffff;
@@ -135,7 +143,7 @@ body {
 }
 .para-text {
     font: "expo";
-    font-size: 14px;
+    font-size: 20px;
 }
 .block-text {
     margin-top: 130px;
@@ -159,4 +167,37 @@ body {
     position: absolute;
     right: 30px;
     bottom: 27px;
+}
+
+/* Our Gym Page*/
+.gym-container {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    color: #343735;
+    align-items: center;
+    text-align: center;
+}
+.gym-header {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.gym-para {
+    font-size: 20px;
+    font-family: "expo";
+}
+.gym-subheading {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.gym-icon {
+    font-size : 40px;
+}
+.online-train-img {
+  background: url('/media/online-training.jpg');
+  background-size: cover;
+  background-color: dimgrey;
+  margin-top: 20px;
 }
