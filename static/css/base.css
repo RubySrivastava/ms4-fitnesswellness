@@ -156,6 +156,22 @@ body {
 .bg-col {
     background-color: rgb(52,55,53,0.5);
 }
+.bg-col-yellow {
+    background-color: #f2f832;
+}
+.bg-col-blue {
+    background-color: #002a4e;
+}
+.bg-col-gold {
+    background-color: #bd9c54;
+}
+.bg-col-black {
+    background-color: #000000;
+}
+.bg-col-green {
+    background-color: #54b848;
+}
+
 .btn-green {
     background-color: #54b848;
     color: #ffffff;
@@ -180,7 +196,6 @@ body {
 }
 .gym-header {
     margin-top: 20px;
-    padding: 20px;
     font-size: 40px;
     font-weight: bold;
 }
