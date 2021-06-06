@@ -13,43 +13,30 @@
         </div>
     </div>
     <div class="row px-4 gx-5">
+        {% for product in products %}
+        {% if product.name == 'Ordinary Monthly' or product.name == 'Yearly' or product.name == 'Blue' %}
         <div class="col-12 col-md-6 col-lg-4">
             <div class="bg-col p-3 my-3">
-            <p class="gym-para">Ordinary</p>
-            <h2 class=gym-header>299:-</h2>
-            <p class="gym-para">+ start fee 0: -</p>
-            <a <a class="btn btn-green btn-ls text-uppercase">sign up</a>
-            <p class="gym-para">Words. monthly fee SEK 199 / month</p>
+                <p class="gym-para">{{ product.name }}</p>
+                <h2 class=gym-header>{{ product.price }}:-</h2>
+                <p class="gym-para">+ start fee 0: -</p>
+                <a <a class="btn btn-green btn-ls text-uppercase">sign up</a>
+                <p class="gym-para">Words. monthly fee SEK 199 / month</p>
+            </div>
         </div>
-    </div>
-        <div class="col-12 col-md-6 col-lg-4">
-
-        <div class="bg-col p-3 my-3">
-            <p class="gym-para">Yearly</p>
-            <h2 class=gym-header>1499:-</h2>
-            <p class="gym-para">+ start fee 0: -</p>
-            <a <a class="btn btn-green btn-ls text-uppercase">sign up</a>
-            <p class="gym-para">Words. monthly fee SEK 199 / month</p>
-        </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-
-        <div class="bg-col p-3 my-3">
-            <p class="gym-para">Blue(3 Years)</p>
-            <h2 class=gym-header>3499:-</h2>
-            <p class="gym-para">+ start fee 0: -</p>
-            <a <a class="btn btn-green btn-ls text-uppercase">sign up</a>
-            <p class="gym-para">Words. monthly fee SEK 199 / month</p>
-        </div>
-        </div>
+        {% endif %}
+        {% endfor %}
+      
     </div>
     <div class="row bg-col-yellow my-5">
         <div class="col-12">
-            <h2 class="gym-header text-uppercase">RIGHT NOW: Test training for SEK 99/week</h2>
-            <p class="gym-para">Due to increased demand, we are currently offering unlimited trial
-                training weeks for SEK 99 / week. You can take part in this at the nearest gym during
-                staffed hours.</p>
+            {% for product in products %}
+            {% if product.name == 'Weekly Offer' %}
+            <h2 class="gym-header text-uppercase">RIGHT NOW: Test training for SEK {{ product.price }}/week</h2>
+            <p class="gym-para">{{ product.description }}</p>
             <a class="btn btn-green btn-ls text-uppercase">sign up</a>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
     <div class="row my-5">
