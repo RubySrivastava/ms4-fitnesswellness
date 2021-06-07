@@ -217,3 +217,12 @@ body {
   background-color: dimgrey;
   margin-top: 20px;
 }
+.image-container {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.product-details-container {
+    text-align: left;
+    padding: 20px;
+}

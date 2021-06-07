@@ -20,9 +20,9 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="bg-col p-3 my-3">
                 <p class="gym-para">{{ product.name }}</p>
-                <h2 class=gym-header>{{ product.price }}:-</h2>
+                <h2 class="gym-header">{{ product.price }}:-</h2>
                 <p class="gym-para">+ start fee 0: -</p>
-                <a <a class="btn btn-green btn-ls text-uppercase">Read More</a>
+                <a href="{% url 'product_detail' product.id %}" class="btn btn-green btn-ls text-uppercase">Read More</a>
                 <p class="gym-para">Words. monthly fee SEK 199 / month</p>
             </div>
         </div>
@@ -35,7 +35,7 @@
             {% if product.name == 'Weekly Offer' %}
             <h2 class="gym-header text-uppercase">RIGHT NOW: Test training for SEK {{ product.price }}/week</h2>
             <p class="gym-para">{{ product.description }}</p>
-            <a class="btn btn-green btn-ls text-uppercase">Read More</a>
+            <a href="{% url 'product_detail' product.id %}" class="btn btn-green btn-ls text-uppercase">Read More</a>
             {% endif %}
             {% endfor %}
         </div>
