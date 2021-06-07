@@ -5,28 +5,29 @@
 <div class="overlay"></div>
 <div class="container container-fluid gym-container">
     <div class="row">
+        {% for product in products %}
+        {% if product.name == 'Train out in August' %}
         <div class="col-12">
-            <h2 class="gym-header text-uppercase">Train out in August for SEK 399.</h2>
-            <p class="gym-para">ALLINCLUSIVE. No lock-in period or start-up fee.
-                The offer is valid when you sign up for a current subscription (2 months notice).
-                You save up to: SEK 625. The offer is valid until June 30.</p>
+            <h2 class="gym-header text-uppercase">{{ product.name }} for SEK {{ product.price }}.</h2>
+            <p class="gym-para">{{ product.description }}</p>
         </div>
+        {% endif %}
+        {% endfor %}
     </div>
     <div class="row px-4 gx-5">
         {% for product in products %}
-        {% if product.name == 'Ordinary Monthly' or product.name == 'Yearly' or product.name == 'Blue' %}
+        {% if product.name == 'Monthly' or product.name == 'Yearly' or product.name == 'Silver' %}
         <div class="col-12 col-md-6 col-lg-4">
             <div class="bg-col p-3 my-3">
                 <p class="gym-para">{{ product.name }}</p>
                 <h2 class=gym-header>{{ product.price }}:-</h2>
                 <p class="gym-para">+ start fee 0: -</p>
-                <a <a class="btn btn-green btn-ls text-uppercase">sign up</a>
+                <a <a class="btn btn-green btn-ls text-uppercase">Read More</a>
                 <p class="gym-para">Words. monthly fee SEK 199 / month</p>
             </div>
         </div>
         {% endif %}
         {% endfor %}
-      
     </div>
     <div class="row bg-col-yellow my-5">
         <div class="col-12">
@@ -34,7 +35,7 @@
             {% if product.name == 'Weekly Offer' %}
             <h2 class="gym-header text-uppercase">RIGHT NOW: Test training for SEK {{ product.price }}/week</h2>
             <p class="gym-para">{{ product.description }}</p>
-            <a class="btn btn-green btn-ls text-uppercase">sign up</a>
+            <a class="btn btn-green btn-ls text-uppercase">Read More</a>
             {% endif %}
             {% endfor %}
         </div>
@@ -48,25 +49,23 @@
     </div>
     <div class="row bg-col-blue my-5" style="color:white;">
         <div class="col-12">
-            <p class="gym-para" style="margin-top:20px; margin-bottom:0px;">0-3 Years</p>
-            <h2 class="gym-header text-uppercase">Blue</h2>
-            <p class="gym-para">This is where it all begins. When you become a member with us, you
-                automatically become a BLUE member, but if you stay for a while, you will soon
-                get new colors and benefits. The first benefit is that you can bring a friend to the gym
-                once a year - completely free! 💪🏼</p>
+            {% for product in products %}
+            {% if product.name == 'Blue' %}
+            <p class="gym-para" style="margin-top:20px; margin-bottom:0px;">3-5 Years</p>
+            <h2 class="gym-header text-uppercase">{{ product.name }}</h2>
+            <p class="gym-para">{{ product.description }}</p>
             <p class="gym-para">See your status and follow your development under My Page.</p>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
     <div class="row my-5" style="color:white;">
+        {% for product in products %}
+        {% if product.name == 'Gold' %}
         <div class="col-12 col-md-6 bg-col-gold">
-            <p class="gym-para" style="margin-top:20px; margin-bottom:0px;">3-7 YEARS</p>
-            <h2 class="gym-header text-uppercase">GOLD</h2>
-            <p class="gym-para">Refer 1 friend for SEK 179 / month (per year)</p>
-            <p class="gym-para">Get 1 month free. This offer only applies to new
-                members, ie people who have not been members of
-                Fitness Wellness in the last 12 months. The membership
-                returns after 12 months at the regular price (SEK 229 /
-                month).</p>
+            <p class="gym-para" style="margin-top:20px; margin-bottom:0px;">5-7 YEARS</p>
+            <h2 class="gym-header text-uppercase">{{ product.name }}</h2>
+            <p class="gym-para">{{ product.description}}</p>
             <p class="gym-para">Bring a friend 5 times /year</p>
             <p class="gym-para">Bring a friend (at a time) during staffed opening hours
                 and let him test our range.</p>
@@ -74,14 +73,11 @@
             <p class="gym-para">Get 1 extra PT session</p>
             <p class="gym-para">Get your new GOLD card at My Page.</p>
         </div>
+        {% elif product.name == 'Black' %}
         <div class="col-12 col-md-6 bg-col-black">
             <p class="gym-para" style="margin-top:20px; margin-bottom:0px;">7+ Years</p>
-            <h2 class="gym-header text-uppercase">Black</h2>
-            <p class="gym-para">Get 1 month free / member you recruit. This offer only
-                applies to new members, ie people who have not been
-                members of Fitness24Seven in the past 12 months.
-                The membership returns after 12 months at the regular
-                price (SEK 229 / month).</p>
+            <h2 class="gym-header text-uppercase">{{ product.name }}</h2>
+            <p class="gym-para">{{ product.description }}</p>
             <p class="gym-para">Bring a friend an unlimited number of
                 occasions / year</p>
             <p class="gym-para">Bring a friend (at a time) during staffed opening hours
@@ -90,6 +86,8 @@
             <p class="gym-para">Get 2 extra PT sessions</p>
             <p class="gym-para">Your BLACK card will appear in My Page.</p>
         </div>
+        {% endif %}
+        {% endfor %}
     </div>
     <div class="row bg-col-green my-5" style="height:80px;">
         <div class="col-12 p-3">
