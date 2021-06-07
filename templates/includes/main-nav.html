@@ -18,12 +18,26 @@
             <li class="nav-item">
                 <a class="nav-link " href="">Contact</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link " href="">Sign In</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="">Sign Up</a>
-            </li>
+            {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                    <li class="nav-item">
+                        <a href="{% url 'account_logout' %}" class="nav-link">Manage Product</a>
+                    </li>
+                {% endif %}
+                <li class="nav-item">
+                    <a href="" class="nav-link">My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a href="{% url 'account_signup' %}" class="nav-link">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'account_login' %}" class="nav-link">Sign In</a>
+                </li>
+            {% endif %} 
         </ul>
     </div>
 </nav>
