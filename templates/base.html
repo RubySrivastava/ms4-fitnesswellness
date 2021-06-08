@@ -32,7 +32,16 @@
 
     {% block extra_js %}
     {% endblock %}
-
+    
+      <!--emailjs-->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script>
+        (function () {
+            emailjs.init("user_HB4HzQzv7UDZdJ7tUoKjZ");
+        })();
+    </script>
+    
     <title>Fitness Wellness {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
@@ -51,6 +60,8 @@
         {% include 'includes/footer.html' %}
     </footer>
 
+    <!--Script For Emailjs-->    
+    <script src="{% static 'js/sendEmail.js' %}"></script>
     {% block postloadjs %}
     {% endblock %}
 
