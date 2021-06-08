@@ -9,6 +9,13 @@ body {
 }
 
 /*Header*/
+#delivery-banner {
+    font-size: 30px;
+    font-family: "Expo";
+}
+.logo-font {
+    text-transform: uppercase;
+}
 .navbar {
   margin-bottom: 0;
   width: 100%;

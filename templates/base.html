@@ -45,8 +45,14 @@
     <title>Fitness Wellness {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid">
+        <div id="delivery-banner" class="row text-center">
+            <div class="col-12 bg-col-green text-white">
+                <h4 class="logo-font my-1"><a href="{% url 'subscribe' %}" style="color:#343735;">Subscribe to recieve News and Discounts!</a></h4>                
+            </div>            
+        </div>
         {% include 'includes/main-nav.html' %}
+
     </header>
 
     {% if messages %}
