@@ -62,6 +62,13 @@
 
     <!--Script For Emailjs-->    
     <script src="{% static 'js/sendEmail.js' %}"></script>
+    <!--Scripts for marker and map-->
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-NMJOHXKwrSfyBDvlqkoYyKogegEMwlA&libraries=places&callback=initMap"></script>
+    <script src="{% static 'js/map.js' %}"></script>
+    <!--Scripts-->
     {% block postloadjs %}
     {% endblock %}
 

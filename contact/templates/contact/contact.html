@@ -3,11 +3,12 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container container-fluid gym-container h-100">
+<div class="container container-fluid gym-container">
     <div class="row">
         <div class="col-md-6">
             <section class="callout message-box text-center">
                 <form onsubmit="return sendMail(this);">
+                    {% csrf_token %}
                     <div>
                         <h1 class="header-form">Send Feedback!</h1>
                     </div>
@@ -30,7 +31,7 @@
             <p class="gym-para">Telephone: 76986978009</p>
             <p class="gym-para">Email: ruby.srivas1984@gmail.com</p>
             <h2 class="gym-header text-uppercase">How to reach us?</h2>
-            <div class="row map-container">
+            <div class="map-container">
                 <div id="map" class="col-12">
                 </div>
             </div>
