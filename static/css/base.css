@@ -19,10 +19,11 @@ body {
 .navbar {
   margin-bottom: 0;
   width: 100%;
-  background-color: #343735;
+  /*background-color: #343735;*/
   border: 0;
   display: flex !important;
   padding-left: 0.6rem;
+  align-items: center;
 }
 .navbar .navbar-brand {
   color: #f2f832;
@@ -38,7 +39,7 @@ body {
 }
 .navbar .navbar-nav .nav-link {
   font-weight: bold;
-  color: #ffffff;
+  color: #343735;
   font-family: "Expo";
 }
 .ml-auto {
@@ -56,6 +57,11 @@ body {
 .navbar-dark .navbar-nav .nav-link:hover {
     color: white;
 }
+a {
+    color: #343735;
+  }
+
+
 /*Media Query For Navbar*/
 @media screen and (max-width: 500px) {
   .navbar a {
@@ -130,7 +136,7 @@ body {
 }
 /*Home Page*/
 .home-container {
-  background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+  background: url('/media/background-image.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

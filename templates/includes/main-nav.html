@@ -1,43 +1,32 @@
-<nav id="top-nav" class="navbar navbar-dark navbar-expand-sm">
-    <a href="{% url 'home' %}" class="navbar-brand active">Fitness Wellness</a>
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-dark navbar-expand-sm">
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link " href="{% url 'gym' %}">Our Gym</a>
+        <ul class="navbar-nav ml-auto mx-auto">
+            <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="{% url 'products' %}">Membership</a>
+                <a class="nav-link mr-5" href="{% url 'gym' %}">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="">Shop</a>
+                <a class="nav-link mr-5" href="{% url 'products' %}">Train</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
+            <a class="font-weight-bold nav-link mr-5" href="#" id="all-product" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-product">
+                <a href="" class="dropdown-item">Apparel</a>
+                <a href="" class="dropdown-item">Accessories</a>
+                <a href="" class="dropdown-item">Nutrition Product</a>
+            </div>
+        </li>
+            <li class="nav-item mr-5">
                 <a class="nav-link " href="{% url 'contact' %}">Contact</a>
             </li>
-            {% if request.user.is_authenticated %}
-                {% if request.user.is_superuser %}
-                    <li class="nav-item">
-                        <a href="{% url 'account_logout' %}" class="nav-link">Manage Product</a>
-                    </li>
-                {% endif %}
-                <li class="nav-item">
-                    <a href="" class="nav-link">My Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a href="{% url 'account_logout' %}" class="nav-link">Logout</a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a href="{% url 'account_signup' %}" class="nav-link">Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a href="{% url 'account_login' %}" class="nav-link">Sign In</a>
-                </li>
-            {% endif %} 
+            
         </ul>
     </div>
 </nav>
