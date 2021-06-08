@@ -117,7 +117,6 @@ body {
         left: 0;
         z-index: 1030;
     }
-
     .header-container {
         padding-top: 164px;
     }
@@ -241,11 +240,10 @@ body {
     line-height: 20px;
     text-align: left;
 }
-/*Explore Map*/
+/*Map*/
 div#map { 
   min-height: 300px;
 }
-
 .map-container {
   padding:10px;
   margin:10px; 
@@ -256,4 +254,4 @@ div#map {
       padding: 0px;
   }
 }
-/*End explore map*/
+/*End map*/
