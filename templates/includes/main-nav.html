@@ -10,9 +10,17 @@
             <li class="nav-item">
                 <a class="nav-link mr-5" href="{% url 'gym' %}">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link mr-5" href="{% url 'products' %}">Train</a>
-            </li>
+            <li class="nav-item dropdown">
+            <a class="font-weight-bold nav-link mr-5" href="#" id="all-train" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Train
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-train">
+                <a href="{% url 'products' %}?category=general_program" class="dropdown-item">General Program</a>
+                <a href="{% url 'products' %}?category=loyal_program" class="dropdown-item">Loyal Program</a>
+                <a href="{% url 'products' %}?category=offer" class="dropdown-item">Offer Program</a>
+                <a href="{% url 'products' %}?category=training" class="dropdown-item">Training Program</a>
+                <a href="{% url 'products' %}?category=general_program,loyal_program,offer,training" class="dropdown-item">All Program</a>
+            </div>
             <li class="nav-item dropdown">
             <a class="font-weight-bold nav-link mr-5" href="#" id="all-product" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop
