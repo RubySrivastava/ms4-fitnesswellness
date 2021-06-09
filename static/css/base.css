@@ -197,7 +197,17 @@ a {
     bottom: 27px;
     font-size: 40px;
 }
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
 
+.btt-link {
+    cursor: pointer;
+}
 /* Our Gym Page*/
 .gym-container {
     margin-top: 90px;
