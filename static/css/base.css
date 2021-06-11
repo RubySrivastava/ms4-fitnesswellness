@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    height: calc(100vh - 56px);
+    min-height: calc(100vh - 56px);
     color: #343735;
     font-family: "rationale";
 }
@@ -217,7 +217,6 @@ a {
     color: #343735;
     align-items: center;
     text-align: center;
-    height: 100vh;
 }
 .gym-header {
     margin-top: 20px;
