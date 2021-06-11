@@ -26,9 +26,10 @@
                 Shop
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-product">
-                <a href="{% url 'shop' %}?category=apparel" class="dropdown-item">Apparel</a>
-                <a href="{% url 'shop' %}?category=accessories" class="dropdown-item">Accessories</a>
-                <a href="{% url 'shop' %}?category=nutrition_product" class="dropdown-item">Nutrition Product</a>
+                <a href="{% url 'products' %}?category=apparel" class="dropdown-item">Apparel</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=nutrition_product" class="dropdown-item">Nutrition Product</a>
+                <a href="{% url 'products' %}?category=apparel,accessories,nutrition_product" class="dropdown-item">All Products</a>
             </div>
         </li>
             <li class="nav-item mr-5">
