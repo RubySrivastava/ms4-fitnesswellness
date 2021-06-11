@@ -208,6 +208,8 @@ a {
 .btt-link {
     cursor: pointer;
 }
+
+
 /* Our Gym Page*/
 .gym-container {
     margin-top: 40px;
@@ -215,10 +217,11 @@ a {
     color: #343735;
     align-items: center;
     text-align: center;
+    height: 100vh;
 }
 .gym-header {
     margin-top: 20px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 }
 .gym-para {

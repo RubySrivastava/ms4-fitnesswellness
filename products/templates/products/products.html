@@ -54,6 +54,8 @@
                 </p>
             {% endif %}
             <p class="gym-para">{{ product.description }}</p>
+            <a href="{% url 'product_detail' product.id %}" class="btn btn-green btn-ls text-uppercase">Read
+                            More</a>
         </div>
         {% endfor %}
     </div>
