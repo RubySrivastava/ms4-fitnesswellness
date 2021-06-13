@@ -287,6 +287,7 @@ a {
     color: #343735;
     align-items: center;
     text-align: center;
+    min-height: calc(100vh - 56px);
 }
 .gym-header {
     margin-top: 20px;
@@ -335,6 +336,11 @@ a {
     line-height: 20px;
     text-align: left;
 }
+
+.signup-container {
+    min-height: calc(100vh - 56px);
+}
+
 /*Map*/
 div#map { 
   min-height: 300px;
