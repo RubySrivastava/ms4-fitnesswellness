@@ -33,7 +33,8 @@
         <div class="col-12 col-md-6 order-md-first">
             <p class="text-muted mt-3 text-center text-md-left">
                 {% if search_term or current_categories or current_sorting != 'None_None' %}
-                <span><a href="{% url 'products' %}?category=general_program,loyal_program,offer,training">Train</a> | </span>
+                <span><a href="{% url 'products' %}?category=general_program,loyal_program,offer,training">Train</a> |
+                </span>
                 <span><a href="{% url 'products' %}?category=apparel,accessories,nutrition_product">Shop</a> | </span>
                 {% endif %}
                 {{ products|length }} Products{% if search_term %} found for
@@ -47,19 +48,25 @@
             <h2 class="gym-header text-uppercase">{{ product.name }}</h2>
             <h3 class="gym-header">{{ product.price }}</h3>
             {% if product.category %}
-                <p class="small mt-1 mb-0">
+            <p class="small mt-1 mb-0">
                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                 </a>
-                </p>
+            </p>
             {% endif %}
             <p class="gym-para">{{ product.description }}</p>
             <a href="{% url 'product_detail' product.id %}" class="btn btn-green btn-ls text-uppercase">Read
-                            More</a>
+                More</a>
+            {% if request.user.is_superuser %}
+            <small class="ml-3">
+                <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+            </small>
+            {% endif %}
         </div>
         {% endfor %}
     </div>
-    
+
     <div class="row bg-col-green my-5">
         <div class="col-12 p-3">
             <p class="gym-para">You must be 18 years old to sign up for membership with us.
@@ -68,39 +75,39 @@
     </div>
     <div class="btt-button shadow-sm rounded-0 border border-black">
         <a class="btt-link d-flex h-100">
-        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
         </a>
-    </div> 
-</div>       
+    </div>
+</div>
 {% endblock %}
 {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript">
     $('.btt-link').click(function (e) {
-    window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
     })
 </script>
 
-            <script type="text/javascript">
-                $('#sort-selector').change(function () {
-                    var selector = $(this);
-                    var currentUrl = new URL(window.location);
+<script type="text/javascript">
+    $('#sort-selector').change(function () {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
 
-                    var selectedVal = selector.val();
-                    if (selectedVal != "reset") {
-                        var sort = selectedVal.split("_")[0];
-                        var direction = selectedVal.split("_")[1];
+        var selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
 
-                        currentUrl.searchParams.set("sort", sort);
-                        currentUrl.searchParams.set("direction", direction);
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
 
-                        window.location.replace(currentUrl);
-                    } else {
-                        currentUrl.searchParams.delete("sort");
-                        currentUrl.searchParams.delete("direction");
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
 
-                        window.location.replace(currentUrl);
-                    }
-                })
-            </script>
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
 {% endblock %}
