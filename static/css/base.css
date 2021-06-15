@@ -401,8 +401,7 @@ input[name='q']::placeholder {
 }
 .image-container {
     object-fit: cover;
-    height: 100%;
-    width: 100%;
+    
 }
 .product-details-container {
     text-align: left;
@@ -417,6 +416,10 @@ input[name='q']::placeholder {
     height: 300px;
     width: 300px;
     object-fit: cover;
+}
+.crud-link {
+    font-family: "expo";
+    font-size: 15px;
 }
 /*Contact Form*/
 .contact-container {
