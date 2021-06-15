@@ -5,16 +5,37 @@
 <div class="overlay"></div>
 <div class="container container-fluid contact-container">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <!--Display Map-->
+        <div class="col-12 col-md-8">
+            <h2 class="gym-header">How to reach us?</h2>
+            <div class="map-container">
+                <div id="map" class="col-12"></div>
+            </div>
+        </div>
+        <!--Display Address-->
+        <div class="col-12 col-md-4 text-left">
+            <h2 class="gym-header">Contact Info:</h2>
+            <p class="gym-para">Vetekornsgatan 35</p>
+            <p class="gym-para">Möndal Sweden</p>
+            <p class="gym-para">Telephone:<span style="text-decoration:underline; font-weight:bold;">76986978009</span>
+            </p>
+            <p class="gym-para"><a href="https://gmail.com" target="_blank" rel="noopener" style="color:#343735;">Email:
+                    ruby.srivas1984@gmail.com</a></p>
+            <p class="gym-para">Opening Hours: 24 hrs.</p>
+        </div>
+    </div>
+    <!--Testimonial Form-->
+    <div class="row">
+        <div class="col-12">
             <form onsubmit="return sendMail(this);">
                 {% csrf_token %}
                 <div>
-                    <h1 class="gym-header text-uppercase">Send Message!</h1>
+                    <h1 class="gym-header">Write Testimonial!</h1>
                 </div>
-                <div class="contact-form px-4 py-3">
+                <div class="contact-form px-5 py-5">
                     <label for="fullname" class="form-label">Name</label>
                     <input type="text" name="name" class="form-control contact-form mb-3" id="fullname"
-                        placeholder="Full Name" required />  
+                        placeholder="Full Name" required />
                     <label for="emailaddress" class="form-label">Email</label>
                     <input type="email" name="emailaddress" class="form-control mb-3 contact-form" id="emailaddress"
                         placeholder="Email Address" required />
@@ -24,19 +45,6 @@
                     <button type="submit" class="btn btn-green text-uppercase center-block">Submit</button>
                 </div>
             </form>
-        </div>
-        <div class="col-12 col-md-6">
-            <h2 class="gym-header text-uppercase">Contact Info:</h2>
-            <p class="gym-para">Vetekornsgatan 35</p>
-            <p class="gym-para">Möndal Sweden</p>
-            <p class="gym-para">Telephone:<span style="text-decoration:underline; font-weight:bold;">76986978009</span>
-            </p>
-            <p class="gym-para"><a href="https://gmail.com" target="_blank" rel="noopener" style="color:#343735;">Email:
-                    ruby.srivas1984@gmail.com</a></p>
-            <h2 class="gym-header text-uppercase">How to reach us?</h2>
-            <div class="map-container">
-                <div id="map" class="col-12"></div>
-            </div>
         </div>
     </div>
 </div>
