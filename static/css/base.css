@@ -366,10 +366,8 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* Our Gym Page*/
+/* About Page*/
 .gym-container {
-    margin-top: 40px;
-    margin-bottom: 50px;
     color: #343735;
     align-items: center;
     text-align: center;
@@ -377,8 +375,10 @@ input[name='q']::placeholder {
 }
 .gym-header {
     margin-top: 20px;
+    margin-bottom:20px;
     font-size: 30px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .gym-para {
     font-size: 20px;
