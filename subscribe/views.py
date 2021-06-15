@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 
 from .forms import SubscriberForm
+from .models import Subscribe
 
 
 def subscribe(request, template='subscribe/subscribe.html'):
