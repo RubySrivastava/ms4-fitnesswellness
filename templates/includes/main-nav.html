@@ -1,41 +1,46 @@
 <nav class="navbar navbar-dark navbar-expand-sm">
-    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mx-auto">
             <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
-                Home
-            </a>
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                    Home
+                </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link mr-5" href="{% url 'gym' %}">About</a>
             </li>
             <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link mr-5" href="#" id="all-train" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Train
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-train">
-                <a href="{% url 'products' %}?category=general_program" class="dropdown-item">General Program</a>
-                <a href="{% url 'products' %}?category=loyal_program" class="dropdown-item">Loyal Program</a>
-                <a href="{% url 'products' %}?category=offer" class="dropdown-item">Offer Program</a>
-                <a href="{% url 'products' %}?category=training" class="dropdown-item">Training Program</a>
-                <a href="{% url 'products' %}?category=general_program,loyal_program,offer,training" class="dropdown-item">All Program</a>
-            </div>
+                <a class="font-weight-bold nav-link mr-5" href="#" id="all-train" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Train
+                </a>
+                <!--Train Drodown Category-->
+                <div class="dropdown-menu border-0" aria-labelledby="all-train">
+                    <a href="{% url 'products' %}?category=general_program" class="dropdown-item">General Program</a>
+                    <a href="{% url 'products' %}?category=loyal_program" class="dropdown-item">Loyal Program</a>
+                    <a href="{% url 'products' %}?category=offer" class="dropdown-item">Offer Program</a>
+                    <a href="{% url 'products' %}?category=training" class="dropdown-item">Training Program</a>
+                    <a href="{% url 'products' %}?category=general_program,loyal_program,offer,training"
+                        class="dropdown-item">All Program</a>
+                </div>
             <li class="nav-item dropdown">
-            <a class="font-weight-bold nav-link mr-5" href="#" id="all-product" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Shop
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-product">
-                <a href="{% url 'products' %}?category=apparel" class="dropdown-item">Apparel</a>
-                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
-                <a href="{% url 'products' %}?category=nutrition_product" class="dropdown-item">Nutrition Product</a>
-                <a href="{% url 'products' %}?category=apparel,accessories,nutrition_product" class="dropdown-item">All Products</a>
-            </div>
-        </li>
+                <a class="font-weight-bold nav-link mr-5" href="#" id="all-product" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Shop
+                </a>
+                <!--Shop Dropdown Category-->
+                <div class="dropdown-menu border-0" aria-labelledby="all-product">
+                    <a href="{% url 'products' %}?category=apparel" class="dropdown-item">Apparel</a>
+                    <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
+                    <a href="{% url 'products' %}?category=nutrition_product" class="dropdown-item">Nutrition
+                        Product</a>
+                    <a href="{% url 'products' %}?category=apparel,accessories,nutrition_product"
+                        class="dropdown-item">All Products</a>
+                </div>
+            </li>
             <li class="nav-item mr-5">
                 <a class="nav-link " href="{% url 'contact' %}">Contact</a>
             </li>
-            
         </ul>
     </div>
 </nav>
