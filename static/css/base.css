@@ -8,59 +8,66 @@ body {
     font-family: "rationale";
 }
 
-/*Header*/
+/* Header */
 #subscribe-banner {
     font-size: 30px;
     font-family: "Expo";
 }
+
+.subscribe-form {
+    margin-top: 50px;
+    font-family: "expo";
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
 .navbar {
   margin-bottom: 0;
   width: 100%;
-  /*background-color: #343735;*/
   border: 0;
   display: flex !important;
   padding-left: 0.6rem;
   align-items: center;
 }
+
 .navbar .navbar-brand {
   font-family: "Rationale";
   font-weight: bold; 
   font-style: italic;
 }
+
 .navbar .navbar-toggler {
   border: 0;
 }
+
 .navbar-toggler {
   background-color: #ffffff;
 }
+
 .navbar .navbar-nav .nav-link {
   font-weight: bold;
   color: #343735;
   font-family: "Expo";
 }
-.logo-font {
-    text-transform: uppercase;
-}
-.ml-auto {
-  margin-left: inherit;
-}
+
 .navbar a:hover {
   background-color: #54b848;
 }
+
 .dropdown-bg {
     background-color:#343735;
 }
+
 .navbar-dark .navbar-nav .show>.nav-link {
   color: #000000;
 }
+
 .navbar-dark .navbar-nav .nav-link:hover {
     color: white;
 }
-a {
-    color: #343735;
-  }
 
-/*Media Query For Navbar*/
+/* Media Query For Navbar */
 @media screen and (max-width: 500px) {
   .navbar a {
     float: none;
@@ -69,8 +76,11 @@ a {
   .navbar-brand {
     font-size: 20px;
   }
+  #subscribe-banner {
+    font-size: 15px;
+  }
 }
-/*End Header*/
+
 /*Footer*/
 .footer {
   background-color:#343735; 
@@ -79,12 +89,15 @@ a {
   width: 100%;
   margin-top: auto;
 }
+
 .footer-div {
     padding-top: 10px;
 }
+
 .social-links {
   padding-bottom: 10px;
 }
+
 .social-links li a i {
   width: 32px;
   height: 32px;
@@ -100,15 +113,16 @@ a {
   -webkit-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
 }
+
 .social-links li a i:hover {
   background: #54b848;
   color: white;
 }
+
 #footer-details {
   padding-top: 10px;
   text-align: center;
 }
-/*End Footer*/
 
 /* --------------------------------- Media queries */
 
@@ -132,7 +146,7 @@ a {
         padding-top: 164px;
     }
 }
-/*Home Page*/
+/* Home Page */
 .home-container {
   background: url('/media/background-image.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -144,10 +158,12 @@ a {
   height: 100vh;
   position: relative;
 }
+
 .home-text {
     margin-top: 120px;
     color: #ffffff;
 }
+
 .header-text {
     font-size: 40px;
 }
@@ -155,49 +171,216 @@ a {
     font: "expo";
     font-size: 20px;
 }
+
 .block-text {
     margin-top: 130px;
     color: #ffffff;
     font: "expo";
     font-size: 20px;
     padding: 20px;
-    
 }
+
+/* About Page*/
+.gym-container {
+    color: #343735;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 56px);
+}
+
+.gym-header {
+    margin-top: 20px;
+    margin-bottom:20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gym-para {
+    font-size: 20px;
+    font-family: "expo";
+}
+
+.gym-subheading {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.gym-icon {
+    font-size : 40px;
+}
+
+.online-train-img {
+  background: url('/media/online-training.jpg');
+  background-size: cover;
+  background-color: dimgrey;
+  margin-top: 20px;
+}
+
+.image-container {
+    object-fit: cover; 
+}
+
+/* Product Form */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 0;
+}
+
+.product-details-container {
+    text-align: left;
+    padding: 20px;
+}
+
+.product-category {
+    font-family: "expo";
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.product-img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.crud-link {
+    font-family: "expo";
+    font-size: 15px;
+}
+
+/*Contact Form*/
+.contact-container {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #343735;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 228px);
+}
+
+.contact-form {
+    font-family: "expo";
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+}
+
+/*Map*/
+div#map { 
+  min-height: 300px;
+}
+.map-container {
+  padding:10px;
+  margin:10px; 
+}
+/*media query*/
+@media screen and (max-width: 500px) {
+  .map-container {
+      padding: 0px;
+  }
+}
+
+/* My Account */
+.signup-container {
+    min-height: calc(100vh - 56px);
+}
+
+/* Allauth form formatting */
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
+/* Background Color */
 .bg-col {
     background-color: rgb(52,55,53,0.5);
 }
-.bg-col-yellow {
-    background-color: #f2f832;
-}
-.bg-col-blue {
-    background-color: #002a4e;
-}
-.bg-col-gold {
-    background-color: #bd9c54;
-}
-.bg-col-black {
-    background-color: #000000;
-}
+
 .bg-col-green {
     background-color: #54b848;
 }
 
+/* Buttons */
 .btn-green {
     background-color: #54b848;
     color: #ffffff;
     margin:10px;
 }
+
 .btn-subscribe {
     margin-top: 30px;
 }
-.icon-arrow {
-    color: #54b848;
-    float: right;
-    position: absolute;
-    right: 30px;
-    bottom: 27px;
-    font-size: 40px;
-}
+
 .btt-button {
     height: 42px;
     width: 42px;
@@ -213,12 +396,20 @@ a {
     cursor: pointer;
 }
 
+.icon-arrow {
+    color: #54b848;
+    float: right;
+    position: absolute;
+    right: 30px;
+    bottom: 27px;
+    font-size: 40px;
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* ------------------------------- bootstrap toasts */
-
+/* Bootstrap Toasts */
 .message-container {
     position: fixed;
     top: 72px;
@@ -285,180 +476,13 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* Allauth form formatting */
-
-.allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
-}
-
-.allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
-}
-
-.allauth-form-inner-content label:not([for='id_remember']) {
-    display: none;
-}
-
-.allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
-}
-
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
-
-    /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
-}
-
-.allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
-}
-
-/* Product Form */
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0;
-    border-color: #dc3545;
-}
-
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    border-radius: 0;
-}
-
-/* About Page*/
-.gym-container {
-    color: #343735;
-    align-items: center;
-    text-align: center;
-    min-height: calc(100vh - 56px);
-}
-.gym-header {
-    margin-top: 20px;
-    margin-bottom:20px;
-    font-size: 30px;
-    font-weight: bold;
+/* Text, Margin and link */
+.logo-font {
     text-transform: uppercase;
 }
-.gym-para {
-    font-size: 20px;
-    font-family: "expo";
+.ml-auto {
+  margin-left: inherit;
 }
-.gym-subheading {
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
-}
-.gym-icon {
-    font-size : 40px;
-}
-.online-train-img {
-  background: url('/media/online-training.jpg');
-  background-size: cover;
-  background-color: dimgrey;
-  margin-top: 20px;
-}
-.image-container {
-    object-fit: cover;
-    
-}
-.product-details-container {
-    text-align: left;
-    padding: 20px;
-}
-.product-category {
-    font-family: "expo";
-    font-size: 20px;
-    text-transform: capitalize;
-}
-.product-img {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-}
-.crud-link {
-    font-family: "expo";
-    font-size: 15px;
-}
-/*Contact Form*/
-.contact-container {
-    margin-top: 40px;
-    margin-bottom: 50px;
+a {
     color: #343735;
-    align-items: center;
-    text-align: center;
-    min-height: calc(100vh - 228px);
-}
-.contact-form {
-    font-family: "expo";
-    font-size: 20px;
-    line-height: 20px;
-    text-align: left;
-}
-
-.signup-container {
-    min-height: calc(100vh - 56px);
-}
-.subscribe-form {
-    margin-top: 50px;
-    font-family: "expo";
-    font-size: 25px;
-    line-height: 25px;
-    text-align: center;
-}
-/*Map*/
-div#map { 
-  min-height: 300px;
-}
-.map-container {
-  padding:10px;
-  margin:10px; 
-}
-/*media query*/
-@media screen and (max-width: 500px) {
-  .map-container {
-      padding: 0px;
   }
-}
-/*End map*/
