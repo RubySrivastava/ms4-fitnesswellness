@@ -20,11 +20,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    
     <!--Favicon link-->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
     <link rel="manifest" href="/site.webmanifest">
+    
     <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
@@ -45,12 +47,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/04dd67fc93.js" crossorigin="anonymous"></script>
-
-    {% endblock %}
-
-    {% block extra_js %}
-    {% endblock %}
-
     <!--emailjs-->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
@@ -59,6 +55,10 @@
             emailjs.init("user_HB4HzQzv7UDZdJ7tUoKjZ");
         })();
     </script>
+    {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
 
     <title>Fitness Wellness {% block extra_title %}{% endblock %}</title>
 </head>
@@ -66,9 +66,9 @@
 <body>
     <header class="container-fluid">
         <div id="delivery-banner" class="row text-center">
-            <div class="col-12 bg-col-green text-white">
-                <h4 class="logo-font my-1"><a href="{% url 'add_subscribe' %}" style="color:#343735;">Subscribe to recieve
-                        News and Discounts!</a></h4>
+            <div class="col-12 bg-col-green">
+                <h2 class="logo-font my-1"><a href="{% url 'add_subscribe' %}">Subscribe to recieve
+                        News and Discounts!</a></h2>
             </div>
         </div>
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
