@@ -6,5 +6,5 @@ admin.autodiscover()
 
 
 urlpatterns = [
-    path('', views.subscribe, name='subscribe'),
+    path('', views.add_subscribe, name='add_subscribe'),
 ]
