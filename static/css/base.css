@@ -13,9 +13,6 @@ body {
     font-size: 30px;
     font-family: "Expo";
 }
-.logo-font {
-    text-transform: uppercase;
-}
 .navbar {
   margin-bottom: 0;
   width: 100%;
@@ -26,7 +23,6 @@ body {
   align-items: center;
 }
 .navbar .navbar-brand {
-  color: #f2f832;
   font-family: "Rationale";
   font-weight: bold; 
   font-style: italic;
@@ -42,6 +38,9 @@ body {
   color: #343735;
   font-family: "Expo";
 }
+.logo-font {
+    text-transform: uppercase;
+}
 .ml-auto {
   margin-left: inherit;
 }
@@ -52,7 +51,7 @@ body {
     background-color:#343735;
 }
 .navbar-dark .navbar-nav .show>.nav-link {
-  color: #ffffff;
+  color: #000000;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
     color: white;
@@ -60,7 +59,6 @@ body {
 a {
     color: #343735;
   }
-
 
 /*Media Query For Navbar*/
 @media screen and (max-width: 500px) {
@@ -188,6 +186,9 @@ a {
     background-color: #54b848;
     color: #ffffff;
     margin:10px;
+}
+.btn-subscribe {
+    margin-top: 30px;
 }
 .icon-arrow {
     color: #54b848;
@@ -408,12 +409,12 @@ input[name='q']::placeholder {
 }
 /*Contact Form*/
 .contact-container {
-    margin-top: 90px;
+    margin-top: 60px;
     margin-bottom: 50px;
     color: #343735;
     align-items: center;
     text-align: center;
-    min-height: calc(100vh - 56px);
+    min-height: calc(100vh - 228px);
 }
 .contact-form {
     font-family: "expo";
@@ -425,7 +426,13 @@ input[name='q']::placeholder {
 .signup-container {
     min-height: calc(100vh - 56px);
 }
-
+.subscribe-form {
+    margin-top: 50px;
+    font-family: "expo";
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+}
 /*Map*/
 div#map { 
   min-height: 300px;

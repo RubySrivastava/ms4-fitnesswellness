@@ -3,22 +3,28 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container container-fluid contact-container">
+<div class="container contact-container mb-2">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12">
             <form id="user-reg-form" action="{% url 'add_subscribe' %}" method="post">
                 {% csrf_token %}
-                <div>
-                    <h1 class="gym-header text-uppercase">Subscribe here!</h1>
+                <div class="bg-col">
+                    <hr>
+                    <h2 class="logo-font mb-2">Subscribe Here</h2>
+                    <hr>
                 </div>
-                <div class="contact-form px-4 py-4">  
+                <div class="subscribe-form">  
                     {{ form.email.label }}
                     {{ form.email }}
-                    <button type="submit" class="btn btn-green text-uppercase center-block">Submit</button>
                 </div>
+                <button type="submit" class="btn btn-green btn-subscribe">Submit</button>
             </form>
         </div>
-        <div class="col-12 col-md-6"></div> 
+    </div>
+    <div class="row bg-col-green my-5">
+        <div class="col-12 p-3">
+            <p class="gym-para">You must be 18 years old to subscribe with us.</p>
+        </div>
     </div>
 </div>
 {% endblock %}
