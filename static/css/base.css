@@ -202,8 +202,9 @@ a {
     height: 42px;
     width: 42px;
     position: fixed;
-    bottom: 10px;
+    bottom: 80px;
     right: 10px;
+    background-color: #54b848;
 }
 
 .btt-link,
@@ -406,6 +407,16 @@ input[name='q']::placeholder {
 .product-details-container {
     text-align: left;
     padding: 20px;
+}
+.product-category {
+    font-family: "expo";
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.product-img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
 }
 /*Contact Form*/
 .contact-container {
