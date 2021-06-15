@@ -24,7 +24,7 @@
             <div class="product-details-container mb-3 mt-md-3">
                 <h2 class="gym-header">Product Detail</h2>
                 <p class="gym-para mb-0">{{ product.name }}</p>
-                <p class="gym-para lead mb-0 font-weight-bold">${{ product.price }}</p>
+                <p class="lead mb-0 font-weight-bold">${{ product.price }}</p>
                 {% if product.category %}
                 <p class="small mt-1 mb-0 gym-para" style="font-size: 15px;">
                     <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -61,8 +61,7 @@
                             </select>
                         </div>
                         {% endif %}
-                        {% if product.category.name == "apparel" or product.category.name == "accessories" or product.category.name == "Nutrition_product" %}
-                        <div class="col-12 gym-para">
+                        <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
                                 <div class="input-group">
@@ -86,8 +85,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        {% endif %}
+                        </div>                       
                         <div class="col{% if s %}-12 mt-2{% endif %}">
                             <a href="{% url 'products' %}" class="btn btn-green rounded-0 mt-5 text-uppercase">
                                 Continue Purchase</a>
