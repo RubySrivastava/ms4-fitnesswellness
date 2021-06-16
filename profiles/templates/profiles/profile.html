@@ -30,7 +30,7 @@
             <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
+                <button class="btn btn-green rounded-0 text-uppercase float-right">Update Information</button>
             </form>
         </div>
         <!--Order History-->
@@ -74,7 +74,14 @@
             </div>
         </div>
     </div>
+    <!--Write Testimonial-->
+    <div class="row">
+        <div class="col-12 text-right">
+            <a class="btn btn-green logo-font" href="">Write testimonial here...</a>
+        </div>
+    </div>
 </div>
+
 {% endblock %}
 
 {% block postloadjs %}
