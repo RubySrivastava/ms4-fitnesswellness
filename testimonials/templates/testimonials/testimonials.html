@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container container-fluid gym-container">
+    <!--Display testimonials-->
+    <div class="row">
+        {% for testimonial in testimonials %}
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card border-0">
+                <div class="card-body pb-0 bg-col">
+                    <p class="mb-0 text-left"><i class="fas fa-quote-left"></i>{{ testimonial.testimony }}<i class="fas fa-quote-right"></i></p>
+                    <p class="mb-0 text-left text-right">{{ testimonial.name }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{% endblock %}
