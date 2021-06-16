@@ -1,5 +1,4 @@
-<nav class="navbar navbar-dark navbar-expand-sm">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="main-nav">
         <ul class="navbar-nav ml-auto mx-auto">
             <li class="nav-item d-block d-md-none">
                 <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
@@ -14,7 +13,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Train
                 </a>
-                <!--Train Drodown Category-->
+                <!--Train Dropdown Category-->
                 <div class="dropdown-menu border-0" aria-labelledby="all-train">
                     <a href="{% url 'products' %}?category=general_program" class="dropdown-item">General Program</a>
                     <a href="{% url 'products' %}?category=loyal_program" class="dropdown-item">Loyal Program</a>
@@ -43,4 +42,3 @@
             </li>
         </ul>
     </div>
-</nav>
