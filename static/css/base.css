@@ -486,3 +486,11 @@ input[name='q']::placeholder {
 a {
     color: #343735;
   }
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}  
