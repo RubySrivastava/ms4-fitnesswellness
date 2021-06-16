@@ -13,3 +13,4 @@ def all_testimonials(request):
     }
 
     return render(request, 'testimonials/testimonials.html', context)
+    
