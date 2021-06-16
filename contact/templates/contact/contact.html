@@ -35,7 +35,7 @@
     <!--Testimonial Form-->
     <div class="row">
         <div class="col-12">
-            <form onsubmit="return sendMail(this);">
+            <form onsubmit="return sendMail(this);" action="{% url 'add_subscribe' %}" method="post">
                 {% csrf_token %}
                 <div>
                     <h1 class="gym-header">Write Testimonial!</h1>
