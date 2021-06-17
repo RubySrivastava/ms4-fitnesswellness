@@ -18,9 +18,8 @@
         <!-- Full-width slides/quotes -->
         {% for testimonial in testimonials %}
         <div class="mySlides">
-            <q class="mb-0"><i class="fas fa-quote-left"></i>{{ testimonial.testimony }}<i
-                    class="fas fa-quote-right"></i></q>
-            <p class="mb-0 text-right author">- {{ testimonial.name }}</p>
+            <q class="mb-0 gym-para">{{ testimonial.testimony }}</q>
+            <p class="mb-0 author gym-para">- {{ testimonial.name }}</p>
         </div>
         {% endfor %}
         <!-- Next/prev buttons -->

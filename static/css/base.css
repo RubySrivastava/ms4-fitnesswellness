@@ -495,6 +495,14 @@ a {
     width: 1.5rem;
 }  
 
+/* Testimonial */
+.testimony {
+    font-weight: bold;
+    font-size: 20px;
+}
+.testimony:hover {
+    color: #54b848;
+}
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -521,6 +529,11 @@ a {
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+.prev {
+    position: absolute;
+    left: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* Position the "next button" to the right */
@@ -564,4 +577,4 @@ a {
 q {font-style: italic;}
 
 /* Add a blue color to the author */
-.author {color: cornflowerblue;}
+.author {color: #008da8;}
