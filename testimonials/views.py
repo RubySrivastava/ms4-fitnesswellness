@@ -1,4 +1,4 @@
-from django.shortcuts import render, reverse
+from django.shortcuts import render, reverse, redirect
 from django.contrib import messages
 
 from .models import Testimonial
@@ -17,21 +17,20 @@ def all_testimonials(request):
     return render(request, 'testimonials/testimonials.html', context)
     
 
-def add_testimonial(request):
+def add_testimonial(request, template='testimonials/testimonial_form.html'):
     """ Add a testimony """
 
     if request.method == 'POST':
-        form = TestimonialForm(request.POST, request.FILES)
+        form = TestimonialForm(request.POST)
         if form.is_valid():
-            testimonial = form.save()
+            form.save()
             messages.success(request, 'Successfully added testimony!')
-            return redirect(reverse('testimonial'))
         else:
-            messages.error(request, 'Failed to add testimony. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add testimony.')
     else:
         form = TestimonialForm()
         
-    template = 'testimonials/testimonials.html'
+    template = 'testimonials/testimonial_form.html'
     context = {
         'form': form,
     }
