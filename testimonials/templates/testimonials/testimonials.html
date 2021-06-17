@@ -14,13 +14,13 @@
 <div class="container container-fluid gym-container">
     <!--Display testimonials-->
     <!-- Slideshow container -->
-    <div class="slideshow-container">
+    <div class="slideshow-container mt-5">
         <!-- Full-width slides/quotes -->
         {% for testimonial in testimonials %}
         <div class="mySlides">
-            <p class="mb-0 text-left"><i class="fas fa-quote-left"></i>{{ testimonial.testimony }}<i
-                    class="fas fa-quote-right"></i></p>
-            <p class="mb-0 text-left text-right">{{ testimonial.name }}</p>
+            <q class="mb-0"><i class="fas fa-quote-left"></i>{{ testimonial.testimony }}<i
+                    class="fas fa-quote-right"></i></q>
+            <p class="mb-0 text-right author">- {{ testimonial.name }}</p>
         </div>
         {% endfor %}
         <!-- Next/prev buttons -->
@@ -40,7 +40,6 @@
 {% block postloadjs %}
 {{ block.super }}
 <!--Script for SlideShow Quotes-->
-<!--<script type="text/javascript" src="{% static 'testimonials/js/quotes.js' %}"></script>-->
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
