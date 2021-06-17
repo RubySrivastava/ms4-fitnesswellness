@@ -12,26 +12,51 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container container-fluid gym-container">
-    <!--Display testimonials-->
-    <!-- Slideshow container -->
-    <div class="slideshow-container mt-5">
-        <!-- Full-width slides/quotes -->
-        {% for testimonial in testimonials %}
-        <div class="mySlides">
-            <q class="mb-0 gym-para">{{ testimonial.testimony }}</q>
-            <p class="mb-0 author gym-para">- {{ testimonial.name }}</p>
-        </div>
-        {% endfor %}
-        <!-- Next/prev buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <!--Display testimonials-->
+            <!-- Slideshow container -->
+            <div class="slideshow-container mt-5">
+                <!-- Full-width slides/quotes -->
+                {% for testimonial in testimonials %}
+                <div class="mySlides">
+                    <q class="mb-0 gym-para">{{ testimonial.testimony }}</q>
+                    <p class="mb-0 author gym-para">- {{ testimonial.name }}</p>
+                </div>
+                {% endfor %}
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
 
-    <!-- Dots/bullets/indicators -->
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <!--Write Testimonial-->
+        <div class="col-md-6">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div>
+                    <h1 class="gym-header mb-1">Write Testimonial!</h1>
+                </div>
+                <div class="contact-form px-5 py-5">
+                    <label for="fullname" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control contact-form mb-3" id="fullname"
+                        placeholder="Full Name" required />
+                    <label for="emailaddress" class="form-label">Email</label>
+                    <input type="email" name="emailaddress" class="form-control mb-3 contact-form" id="emailaddress"
+                        placeholder="Email Address" required />
+                    <label for="message" class="form-label">Testimony</label>
+                    <textarea rows="5" name="message" class="form-control mb-3 contact-form" id="message"
+                        placeholder="Write here" required></textarea>
+                    <button type="submit" class="btn btn-green text-uppercase center-block">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 {% endblock %}
