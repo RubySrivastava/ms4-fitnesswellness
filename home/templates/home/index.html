@@ -2,16 +2,16 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
 <div class="home-container">
-    <div class="container h-100">
+    <div class="container">
         <div class="row home-text">
             <div class="col-6 col-md-6">
                 <h1 class="display-8 text-uppercase header-text">
@@ -23,7 +23,7 @@
                 <div>
                     <a href="{% url 'account_signup' %}" class="btn btn-green btn-ls text-uppercase">Register Now</a>
                 </div>
-            </div>    
+            </div>
         </div>
         <div class="row block-text px-4 gx-5">
             <div class="col-12 col-md-6">
@@ -35,10 +35,73 @@
             <div class="col-12 col-md-6">
                 <div class="bg-col inline p-3">
                     <p>Get started from sek 299/month</p>
-                    <a href="{% url 'products' %}?category=general_program,loyal_program,offer,training"><i class="fas fa-arrow-circle-right icon-arrow"></i></a>
-                </div> 
-            </div>       
+                    <a href="{% url 'products' %}?category=general_program,loyal_program,offer,training"><i
+                            class="fas fa-arrow-circle-right icon-arrow"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5 bg-col">
+            <div class="col-12">
+                <!--Display testimonials-->
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <!-- Full-width slides/quotes -->
+                    {% for testimonial in testimonials %}
+                    <div class="mySlides">
+                        <q class="mb-0 gym-para">{{ testimonial.testimony }}</q>
+                        <p class="mb-0 author gym-para">- {{ testimonial.name }}</p>
+                    </div>
+                    {% endfor %}
+                    <!-- Next/prev buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<!--Script for SlideShow Quotes-->
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
 {% endblock %}

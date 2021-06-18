@@ -155,7 +155,7 @@ body {
   background-size: cover;
   background-color: dimgrey;
   display: flex;
-  height: 100vh;
+  min-height: calc(100vh - 56px);
   position: relative;
 }
 
@@ -506,7 +506,7 @@ a {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  color: #ffffff;
 }
 
 /* Slides */
@@ -553,7 +553,7 @@ a {
 .dot-container {
   text-align: center;
   padding: 20px;
-  background: #ddd;
+ 
 }
 
 /* The dots/bullets/indicators */
@@ -570,7 +570,7 @@ a {
 
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #54b848;
 }
 
 /* Add an italic font style to all quotes */
