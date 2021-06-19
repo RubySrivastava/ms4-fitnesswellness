@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.core.paginator import Paginator #import Paginator
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -10,8 +11,12 @@ from .forms import ProductForm
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-
+    
     products = Product.objects.all()
+    paginator = Paginator(products, 2)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
     query = None
     categories = None
     sort = None
@@ -34,7 +39,7 @@ def all_products(request):
             
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
+            page_obj = page_obj.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
         if 'q' in request.GET:
@@ -50,7 +55,7 @@ def all_products(request):
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        'products': products,
+        'products': page_obj,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
