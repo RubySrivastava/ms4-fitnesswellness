@@ -12,9 +12,10 @@ def add_subscribe(request, template='subscribe/subscribe.html'):
         form = SubscriberForm(request.POST)
         if form.is_valid():
             form.save()
+            form = SubscriberForm()
             messages.success(request, 'Successfully Subscribed!')
         else:
-            messages.error(request, 'Failed to subscribe')
+            messages.error(request, 'Failed to subscribe.')
     else:
         form = SubscriberForm()
 
