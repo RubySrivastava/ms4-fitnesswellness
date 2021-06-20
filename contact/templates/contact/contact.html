@@ -21,14 +21,14 @@
             </div>
         </div>
         <!--Display Address-->
-        <div class="col-12 col-md-4 text-left">
+        <div class="col-12 col-md-4">
             <h2 class="gym-header">Contact Info:</h2>
-            <p class="gym-para">Vetekornsgatan 35</p>
+            <p class="gym-para">Möndal Galleria</p>
             <p class="gym-para">Möndal Sweden</p>
-            <p class="gym-para">Telephone:<span style="text-decoration:underline; font-weight:bold;">76986978009</span>
+            <p class="gym-para">Telephone:<span style="text-decoration:underline; font-weight:bold;">7698697809</span>
             </p>
             <p class="gym-para"><a href="https://gmail.com" target="_blank" rel="noopener" style="color:#343735;">Email:
-                    ruby.srivas1984@gmail.com</a></p>
+                    fitnesswellness@gmail.com</a></p>
             <p class="gym-para">Opening Hours: 24 hrs.</p>
         </div>
     </div>
@@ -38,7 +38,7 @@
             <form onsubmit="return sendMail(this);" action="{% url 'add_subscribe' %}" method="post">
                 {% csrf_token %}
                 <div>
-                    <h1 class="gym-header">Keep in touch!</h1>
+                    <h2 class="gym-header">Keep in touch!</h2>
                 </div>
                 <div class="contact-form px-5 py-5">
                     <label for="fullname" class="form-label">Name</label>
