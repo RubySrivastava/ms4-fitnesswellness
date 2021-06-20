@@ -1,7 +1,7 @@
 function initMap() {
     const myLatLong = {
-        lat: 57.659012,
-        lng: 11.990340
+        lat: 57.655890,
+        lng: 12.014910
     }; /*Möndal*/
     
     /*Select Location*/
