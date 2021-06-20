@@ -12,16 +12,16 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container gym-container">
-        <div class="row">
-            <div class="col-12 col-md-6">
+        <div class="row mr-5 ml-5">
+            <div class="col-12">
                 <hr>
                 <h2 class="logo-font mb-4 gym-header">Product Management</h2>
-                <h4 class="text-muted text-left">Add a Product</h4>
                 <hr>
+                <h4 class="text-muted text-center">Add a Product</h4>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-6 text-left">
+        <div class="row mr-5 ml-5">
+            <div class="col-12 text-left gym-para">
                 <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
