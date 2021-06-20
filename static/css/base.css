@@ -490,6 +490,9 @@ input[name='q']::placeholder {
 .ml-auto {
   margin-left: inherit;
 }
+.text-black {
+    color: #343735;
+}
 a {
     color: #343735;
   }
