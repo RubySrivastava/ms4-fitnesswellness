@@ -179,7 +179,14 @@ body {
     font-size: 20px;
     padding: 20px;
 }
-
+.subscribe-img {
+  background: url('/media/subscribe-image.jpg');
+  background-size: cover;
+  background-color: dimgrey;
+  display: flex;
+  height: 500px;
+  object-fit: cover;
+}
 /* About Page*/
 .gym-container {
     color: #343735;
