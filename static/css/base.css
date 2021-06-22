@@ -313,6 +313,7 @@ div#map {
 /* My Account */
 .signup-container {
     min-height: calc(100vh - 56px);
+    align-content: center;
 }
 
 /* Allauth form formatting */

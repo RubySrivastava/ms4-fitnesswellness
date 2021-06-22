@@ -1,5 +1,5 @@
 {% extends "account/base.html" %}
-{% load static %} 
+{% load static %}
 
 {% load i18n %}
 {% load account %}
@@ -8,20 +8,19 @@
 
 
 {% block inner_content %}
-<div class="overlay"></div>
-<div class="container container-fluid signup-container">
-<hr>
+
 <h2 class="logo-font mb-4 gym-header">{% trans "Confirm E-mail Address" %}</h2>
-<hr>
 
 {% if confirmation %}
 
 {% user_display confirmation.email_address.user as user_display %}
 
-<p class="gym-para">{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user {{ user_display }}.{% endblocktrans %}</p>
+<p class="gym-para">{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a
+        href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user {{ user_display }}.{% endblocktrans %}
+</p>
 
-<form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
-{% csrf_token %}
+<form class="gym-para" method="post" action="{% url 'account_confirm_email' confirmation.key %}">
+    {% csrf_token %}
     <button class="btn-green" type="submit">{% trans 'Confirm' %}</button>
 </form>
 
@@ -29,8 +28,8 @@
 
 {% url 'account_email' as email_url %}
 
-<p class="gym-para">{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
+<p class="gym-para">{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a
+        href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
 
 {% endif %}
-</div>
 {% endblock %}

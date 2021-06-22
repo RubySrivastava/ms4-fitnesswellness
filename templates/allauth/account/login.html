@@ -7,11 +7,11 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block inner_content %}
-<div class="container container-fluid signup-container mr-5 ml-5 mt-3">
-    <div class="row text-center">
+<div class="container container-fluid signup-container bg-yellow">
+    <div class="row mr-5 ml-5 mt-3">
         <div class="col-12">
             <hr>
-            <h2 class="gym-header logo-font text-center mb-4">{% trans "Sign In" %}</h2>
+            <h2 class="gym-header logo-font mb-4">{% trans "Sign In" %}</h2>
             <hr>
 
             {% get_providers as socialaccount_providers %}
@@ -39,7 +39,7 @@
                 first.{% endblocktrans %}</p>
             {% endif %}
 
-            <form class="login" method="POST" action="{% url 'account_login' %}">
+            <form class="login gym-para" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
@@ -47,9 +47,10 @@
                 {% endif %}
                 <a class="button secondaryAction"
                     href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-                <button class="primaryAction logo-font mb-4 btn-green" type="submit">{% trans "Sign In" %}</button>
+                <button class="primaryAction logo-font mb-4 btn-green" style="background-color: #54b848;" type="submit">{% trans "Sign In" %}</button>
             </form>
         </div>
+        
     </div>
 </div>
 {% endblock %}
