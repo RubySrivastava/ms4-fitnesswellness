@@ -8,7 +8,7 @@ body {
     font-family: "rationale";
 }
 
-/* Header */
+/******************************** Subscribe */
 #subscribe-banner {
     font-size: 30px;
     font-family: "Expo";
@@ -22,6 +22,7 @@ body {
     text-align: center;
 }
 
+/*********************************** Navbar */
 .navbar {
   margin-bottom: 0;
   width: 100%;
@@ -67,21 +68,7 @@ body {
     color: white;
 }
 
-/* Media Query For Navbar */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-  .navbar-brand {
-    font-size: 20px;
-  }
-  #subscribe-banner {
-    font-size: 15px;
-  }
-}
-
-/*Footer*/
+/*********************************** Footer*/
 .footer {
   background-color:#343735; 
   color: #ffffff;
@@ -124,29 +111,7 @@ body {
   text-align: center;
 }
 
-/* --------------------------------- Media queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-    .header-container {
-        padding-top: 164px;
-    }
-}
-/* Home Page */
+/************************************** Home Page */
 .home-container {
   background: url('/media/background-image.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -187,333 +152,17 @@ body {
   height: 500px;
   object-fit: cover;
 }
-/* About Page*/
-.gym-container {
-    color: #343735;
-    align-items: center;
-    text-align: center;
-    min-height: calc(100vh - 56px);
-}
 
-.gym-header {
-    margin-top: 20px;
-    margin-bottom:20px;
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.gym-para {
-    font-size: 20px;
-    font-family: "expo";
-}
-
-.gym-subheading {
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.gym-icon {
-    font-size : 40px;
-}
-
-.online-train-img {
-  background: url('/media/online-training.jpg');
-  background-size: cover;
-  background-color: dimgrey;
-  margin-top: 20px;
-}
-
-.image-container {
-    object-fit: cover; 
-}
-
-/* Product Form */
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0;
-    border-color: #dc3545;
-}
-
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    border-radius: 0;
-}
-
-.product-details-container {
-    text-align: left;
-    padding: 20px;
-}
-
-.product-category {
-    font-family: "expo";
-    font-size: 20px;
-    text-transform: capitalize;
-}
-
-.product-img {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-}
-
-.crud-link {
-    font-family: "expo";
-    font-size: 15px;
-}
-
-/*Contact Form*/
-.contact-container {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    color: #343735;
-    align-items: center;
-    text-align: center;
-    min-height: calc(100vh - 228px);
-}
-
-.contact-form {
-    font-family: "expo";
-    font-size: 20px;
-    line-height: 20px;
-    text-align: left;
-}
-
-/*Map*/
-div#map { 
-  min-height: 300px;
-}
-.map-container {
-  padding:10px;
-  margin:10px; 
-}
-/*media query*/
-@media screen and (max-width: 500px) {
-  .map-container {
-      padding: 0px;
-  }
-}
-
-/* My Account */
-.signup-container {
-    min-height: calc(100vh - 56px);
-    align-content: center;
-}
-
-/* Allauth form formatting */
-.allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
-}
-
-.allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
-}
-
-.allauth-form-inner-content label:not([for='id_remember']) {
-    display: none;
-}
-
-.allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
-}
-
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
-
-    /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
-}
-
-.allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
-}
-
-/* Background Color */
-.bg-col {
-    background-color: rgb(52,55,53,0.5);
-}
-
-.bg-col-green {
-    background-color: #54b848;
-}
-
-/* Buttons */
-.btn-green {
-    background-color: #54b848;
-    color: #ffffff;
-    margin:10px;
-}
-
-.btn-subscribe {
-    margin-top: 30px;
-}
-
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 80px;
-    right: 10px;
-    background-color: #54b848;
-}
-
-.btt-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
-}
-
-.icon-arrow {
-    color: #54b848;
-    float: right;
-    position: absolute;
-    right: 30px;
-    bottom: 27px;
-    font-size: 40px;
-}
-
-input[name='q']::placeholder {
-    color: #aab7c4;
-}
-
-/* Bootstrap Toasts */
-.message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 99999999999;
-}
-
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 2px;
-}
-
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
-.arrow-up {
-    width: 0; 
-    height: 0; 
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
-    position: absolute;
-    top: -10px;
-    right: 36px;
-}
-
-/* Convenience classes - colors copied from Bootstrap */
-.arrow-primary {
-    border-bottom-color: #007bff !important;
-}
-
-.arrow-secondary {
-    border-bottom-color: #6c757d !important;
-}
-
-.arrow-success {
-    border-bottom-color: #28a745 !important;
-}
-
-.arrow-danger {
-    border-bottom-color: #dc3545 !important;
-}
-
-.arrow-warning {
-    border-bottom-color: #ffc107 !important;
-}
-
-.arrow-info {
-    border-bottom-color: #17a2b8 !important;
-}
-
-.arrow-light {
-    border-bottom-color: #f8f9fa !important;
-}
-
-.arrow-dark {
-    border-bottom-color: #343a40 !important;
-}
-
-.bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-/* Text, Margin and link */
-.logo-font {
-    text-transform: uppercase;
-}
-.ml-auto {
-  margin-left: inherit;
-}
-.text-black {
-    color: #343735;
-}
-a {
-    color: #343735;
-  }
-
-.icon {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
-}  
-
-/* Testimonial */
+/*********************************** Testimonial */
 .testimony {
     font-weight: bold;
     font-size: 30px;
 }
+
 .testimony:hover {
     color: #54b848;
 }
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -592,5 +241,379 @@ q {
 /* Add a blue color to the author */
 .author {
     color: #008da8;
-    font-size: 25px;
+    font-size: 20px;
 }
+
+/******************************** About Page*/
+.gym-container {
+    color: #343735;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 56px);
+}
+
+.gym-header {
+    margin-top: 20px;
+    margin-bottom:20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gym-para {
+    font-size: 20px;
+    font-family: "expo";
+}
+
+.gym-subheading {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.gym-icon {
+    font-size : 40px;
+}
+
+.online-train-img {
+  background: url('/media/online-training.jpg');
+  background-size: cover;
+  background-color: dimgrey;
+  margin-top: 20px;
+}
+
+.image-container {
+    object-fit: cover; 
+}
+
+/********************************* Product Form */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 0;
+}
+
+.product-details-container {
+    text-align: left;
+    padding: 20px;
+}
+
+.product-category {
+    font-family: "expo";
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.product-img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.crud-link {
+    font-family: "expo";
+    font-size: 15px;
+}
+
+/******************************** Contact Form*/
+.contact-container {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #343735;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 228px);
+}
+
+.contact-form {
+    font-family: "expo";
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+}
+
+/* Map*/
+div#map { 
+  min-height: 300px;
+}
+.map-container {
+  padding:10px;
+  margin:10px; 
+}
+
+/********************************** My Account */
+.signup-container {
+    min-height: calc(100vh - 56px);
+    align-content: center;
+}
+
+/********************************** Allauth form formatting */
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
+/******************************** Background Color */
+.bg-col {
+    background-color: rgb(52,55,53,0.5);
+}
+
+.bg-col-green {
+    background-color: #54b848;
+}
+
+/********************************* Buttons */
+.btn-green {
+    background-color: #54b848;
+    color: #ffffff;
+    margin:10px;
+}
+
+.btn-subscribe {
+    margin-top: 30px;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    background-color: #54b848;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+.icon-arrow {
+    color: #54b848;
+    float: right;
+    position: absolute;
+    right: 30px;
+    bottom: 27px;
+    font-size: 40px;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+/*********************************** Bootstrap Toasts */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* Convenience classes - colors copied from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/********************************* Text, Margin,icon and link */
+.logo-font {
+    text-transform: uppercase;
+}
+.ml-auto {
+  margin-left: inherit;
+}
+.text-black {
+    color: #343735;
+}
+a {
+    color: #343735;
+  }
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}  
+
+
+/********************************** Media queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* For Navbar */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  .navbar-brand {
+    font-size: 20px;
+  }
+  #subscribe-banner {
+    font-size: 15px;
+  }
+  .gym-header {
+    font-size: 15px;
+  }
+  .gym-para {
+    font-size: 10px;
+  }
+  .header-text {
+      font-size:20 px;
+  }
+  #subscribe-banner {
+      font-size: 15px;
+  }
+  .subscribe-form {
+      font-size: 10px;
+  }
+}
+
+/*map-container*/
+@media screen and (max-width: 500px) {
+  .map-container {
+      padding: 0px;
+  }
+}
+
