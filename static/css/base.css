@@ -9,7 +9,7 @@ body {
 }
 
 /******************************** Subscribe */
-#subscribe-banner {
+.subscribe-link {
     font-size: 30px;
     font-family: "Expo";
 }
@@ -590,9 +590,6 @@ a {
   .navbar-brand {
     font-size: 20px;
   }
-  #subscribe-banner {
-    font-size: 15px;
-  }
   .gym-header {
     font-size: 15px;
   }
@@ -600,13 +597,16 @@ a {
     font-size: 10px;
   }
   .header-text {
-      font-size:20 px;
-  }
-  #subscribe-banner {
-      font-size: 15px;
+      font-size:20px;
   }
   .subscribe-form {
       font-size: 10px;
+  }
+  .subscribe-link {
+    font-size: 15px;
+  }
+  .icon-arrow {
+      font-size: 20px;
   }
 }
 
