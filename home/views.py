@@ -1,5 +1,4 @@
-from django.shortcuts import render, reverse, redirect
-from django.contrib import messages
+from django.shortcuts import render
 
 from .models import Testimonial
 
