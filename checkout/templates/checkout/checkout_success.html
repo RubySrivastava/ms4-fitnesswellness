@@ -68,7 +68,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-8 text-right">
-                        <p class="small mb-0">{{ item.quantity }} @ sek{{ item.product.price }} each</p>
+                        <p class="small mb-0">{{ item.quantity }} @ ${{ item.product.price }} each</p>
                     </div>
                 </div>
                 {% endfor %}
@@ -87,7 +87,7 @@
                         <p class="mb-0 text-black font-weight-bold">Grand Total</p>
                     </div>
                     <div class="col-12 col-md-8 text-right">
-                        <p class="mb-0">sek {{ order.grand_total }}</p>
+                        <p class="mb-0">${{ order.grand_total }}</p>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
                         <p class="mb-0 text-black font-weight-bold">Order Total</p>
                     </div>
                     <div class="col-12 col-md-8 text-right">
-                        <p class="mb-0">sek {{ order.order_total }}</p>
+                        <p class="mb-0">${{ order.order_total }}</p>
                     </div>
                 </div>
             </div>
