@@ -15,15 +15,15 @@
     <div class="row">
         <div class="col-md-6 d-none d-sm-block subscribe-img"></div>
         <div class="col-md-6">
-            <form id="user-reg-form" action="{% url 'add_subscribe' %}" method="post">
-                <div class="">
+            <form action="{% url 'add_subscribe' %}" method="post">
+                <div>
                     <hr>
                     <h2 class="logo-font mb-2 gym-header">Subscribe Here</h2>
                     <hr>
                     <p class="gym-para">Subscribe to our newsletter and never miss our latest news and offer.</p>
                     <p class="gym-para">Our newsletter is sent once a week, every Monday.</p>
                 </div>
-                <div class="subscribe-form">
+                <div class="gym-para">
                     {% csrf_token %}
                     {{ form|crispy }}
                 </div>

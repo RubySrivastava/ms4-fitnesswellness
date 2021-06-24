@@ -145,7 +145,7 @@ body {
     padding: 20px;
 }
 .subscribe-img {
-  background: url('/media/subscribe-image.jpg');
+  background: url('/media/subscribe-image.jpg') no-repeat bottom center;
   background-size: cover;
   background-color: dimgrey;
   display: flex;
@@ -588,19 +588,31 @@ a {
     display: block;
   }
   .navbar-brand {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  .nav-link {
+      font-size: 18px;
   }
   .gym-header {
-    font-size: 15px;
+    font-size: 20px;
   }
   .gym-para {
-    font-size: 10px;
+    font-size: 15px;
+  }
+  .fa-lg {
+      font-size: 15px;
   }
   .header-text {
-      font-size:20px;
+      font-size: 18px;
+  }
+  .para-text {
+      font-size: 15px;
+  }
+  .block-text {
+      font-size: 18px;
   }
   .subscribe-form {
-      font-size: 10px;
+      font-size: 15px;
   }
   .subscribe-link {
     font-size: 15px;
@@ -617,3 +629,38 @@ a {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+  .nav-link {
+     font-size: 15px; 
+  }
+  .fa-lg {
+      font-size: 15px;
+  }
+  .gym-header {
+    font-size: 15px;
+  }
+  .gym-para {
+    font-size: 12px;
+  }
+  .header-text {
+      font-size: 17px;
+  }
+  .para-text {
+      font-size: 12px;
+  }
+  .block-text {
+      font-size: 15px;
+  }
+  .subscribe-form {
+      font-size: 12px;
+  }
+  .subscribe-link {
+    font-size: 12px;
+  }
+  .icon-arrow {
+      font-size: 17px;
+  }
+}
