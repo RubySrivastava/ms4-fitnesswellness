@@ -476,7 +476,7 @@ input[name='q']::placeholder {
 /*********************************** Bootstrap Toasts */
 .message-container {
     position: fixed;
-    top: 72px;
+    top: 110px;
     right: 15px;
     z-index: 99999999999;
 }
@@ -608,6 +608,9 @@ a {
   .icon-arrow {
       font-size: 20px;
   }
+  .message-container {
+    top: 90px;
+}
 }
 @media screen and (max-width: 500px) {
   .navbar a {
