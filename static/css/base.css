@@ -133,14 +133,14 @@ body {
     font-size: 40px;
 }
 .para-text {
-    font: "expo";
+    font-family: "expo";
     font-size: 20px;
 }
 
 .block-text {
     margin-top: 130px;
     color: #ffffff;
-    font: "expo";
+    font-family: "expo";
     font-size: 20px;
     padding: 20px;
 }

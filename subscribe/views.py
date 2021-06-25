@@ -25,4 +25,3 @@ def add_subscribe(request, template='subscribe/subscribe.html'):
     }
 
     return render(request, template, context)
-    
