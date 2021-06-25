@@ -115,7 +115,7 @@
                 </span>
                 {% if products.has_next %}
                 <a href="?{% param_replace page=products.next_page_number %}">next</a>
-                <a href="?{% param_replace page=paginator.num_pages %}">last &raquo;</a>
+                <a href="?{% param_replace page=products.paginator.num_pages %}">last &raquo;</a>
                 {% endif %}
             </span>    
         </div>
