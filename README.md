@@ -297,7 +297,7 @@ This site also provides to create your own account and post recipe.
   
 
 <a name="#testing"></a>
-## Testing
+## Testing - [Find here](testing.md)
 
 
 <a name="deployment"></a>
