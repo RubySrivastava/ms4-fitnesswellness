@@ -281,8 +281,12 @@ This site also provides to create your own account and post recipe.
 <a name="bugs"></a>
 ## Known Bugs
 
-- ### 
+- ### Pagination was not working with filtering.
+   - The view forgot whatever filtering had applied, because that filtering is also controlled by query parameters, and these links don't include the filter's parameters.
+   - I used template tag to build pagination links that preserve other query parameters used for filtering and got my pagination with filtering.
 
+- ### Map was only displaying for a second and disappear from page after deployment on heroku.
+   - The current URL loaded the Maps JavaScript API had not been added to the list of allowed referrers. So I added the url and I got the map.
 
 <a name="credits"></a>
 ## Credits
