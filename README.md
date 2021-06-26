@@ -130,7 +130,7 @@ This site also provides to create your own account and post recipe.
     - Train Page
         - This page contains the list of programs based on category with image and price. Page has pagination and back to top button.
 
-    -Shop Page
+    - Shop Page
         - This page contains the list of products based on category with image and price. Page has pagination and back to top button.
 
     - Contact Page
@@ -166,3 +166,75 @@ This site also provides to create your own account and post recipe.
 ### Future Features
   - Create a way for the user to rate the website without having to type up feedback.
   - A page where people can write and read review of product.
+
+
+<a name="design"></a>     
+## Design
+
+### Colour 
+      
+- #### This website is design for gym lovers who likes to be fit and needs lots of motivation to be fit.
+    Colors which are used for the site show intelligence and simplicity respectively.Because of this color the content looks simple and clear.
+    
+    Color #343735 is used for background and footer.
+    
+    <img src="readme/color/343735.png" height="40px" />
+    
+    Colors #000 and #fff are used for text-color. 
+      
+    <img src="readme/color/00000.png" height="40px" />
+    <img src="readme/color/ffffff.png" height="40px" />
+
+    Color #54b848 is used for background of buttons/links and note of the page. 
+    
+    <img src="readme/color/54b848.png" height="40px" />
+
+    Colors #888 and #bbb are used for testimonial next, prev and dots buttons.
+    
+    <img src="readme/color/888888.png" height="40px" />
+    <img src="readme/color/bbbbbb.png" height="40px" />
+      
+### Typography
+
+- #### The main font Rationale is used for brand name, mobile header, page heading and home text.
+- #### The second font used is a Expo for main navbar, footer details and paragraphs.
+
+### Icons
+
+- #### In this project, icons provided by Font Awesome. The Icons that are used have functional purposes such as the hamburger menu and social media icons.
+
+### Imagery
+
+- #### 
+    -[Image Optimizer](http://jpeg-optimizer.com/)
+
+### Defensive Design
+
+- #### The user is not able to break the site by clicking on buttons.
+- #### The add and edit product form:
+    - The category has to be chosen.
+- #### Use the crispy form for validation.
+
+### Mockups
+
+- #### Mockups were created using Adobe Xd.
+    -[Desktop Wireframes](https://xd.adobe.com/view/cfbc06d7-2a53-4f18-8dff-77452eaf2f42-9aef/)
+    
+    -[Mobile Wireframes]()
+
+    -[Ipad/Tablet Wireframes]()
+
+- #### Mockup made through original website 
+    -[Wireframes](https://techsini.com/multi-mockup/index.php)
+    
+    <img src="readme/mockup/home.png" />
+    <img src="readme/mockup/subscribe.png" />
+    <img src="readme/mockup/about.png" />
+    <img src="readme/mockup/products.png" />
+    <img src="readme/mockup/product_detail.png" />
+    <img src="readme/mockup/contact.png" />
+    <img src="readme/mockup/bag.png" />
+    <img src="readme/mockup/signup.png" />
+    <img src="readme/mockup/login.png" />
+    <img src="readme/mockup/profile.png" />
+    
