@@ -269,6 +269,50 @@ This site also provides to create your own account and post recipe.
 
   - [Heroku Postgres](https://www.postgresql.org/) - PostgreSQL is one of the world's most popular relational database management systems.
   
-  
+
+<a name="#testing"></a>
+## Testing
+
+
+<a name="deployment"></a>
+## Deployment
+
+
+<a name="bugs"></a>
+## Known Bugs
+
+- ### 
+
+
+<a name="credits"></a>
+## Credits
+
+### Code :
+
+- Bootstrap library was used to create a responsive design. 
+ 
+### Content :
+
+- All code was written by the Ruby Srivastava.
+
+- To write up a README file the most helpful documents were
+    - Code Institute [SampleREADME](https://github.com/Code-Institute-Solutions/SampleREADME)
+    - Code Institute [README Template](https://github.com/Code-Institute-Solutions/readme-template)
+    - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
+    
+- To write up the content of page the most helpful site is
+    - NORDIC WELLNESS [Official Website](https://nordicwellness.se/)
+    - FITNESS24SEVEN [Official Website](https://co.fitness24seven.com/en/)
+
+### Media :
+- All images used were taken from [UnSplash website](https://unsplash.com/)
+
+### Acknowledgements :
+
+- I was inspired by the people of surrounding me who wants to be fit and gyms are in thier regular routine.
+- Thanks to my fellow students and tutors on slack channel who helped me in some way.
+- Thanks to my reviewer who review it and help me to fix any error and bugs.
+- Thanks to my mentor Maranatha Ilesalnmi who helped me throughout the project and gived me important suggestions and feedback of my work.
+ 
   
     
