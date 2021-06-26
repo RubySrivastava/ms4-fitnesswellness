@@ -303,6 +303,80 @@ This site also provides to create your own account and post recipe.
 <a name="deployment"></a>
 ## Deployment
 
+- ### AWS 
+  1. Created a new Amazon account and connect to amazon service AWS3 account are cloud based serve where the project media and staicfiles will be stored unto. At first, we locate S3 on amazon service then we create a bucket. While creating the bucket on S3, the note that public access must be all switched off to allow access for users.
+
+  2. Once we've created the bucket, we now can now click on it's properties and enable the Static Website Hosting option, so it can serve the purpose of hosting our static files, you will need to imput an index.html and error.html before saving. Then we go into the created bucket Permissions and click into CORS configuration, this part already have a prefilled default config, All that is needed is just to write the default code and save the config.
+
+  3. Then we go into the bucket policy to allows access to the contents across all web and inside this we will put in here some code including arn address displayed at the top of the heading. Then we go into amazon IAM to allow identity and access management of our stored files and folder. In the IAM service, we add a new group for our application and then we set the policies to ALL Then it generates a downlaodable zip file containing ID and KEY for us to use for the newly added group. This ID and KEY as to be stored in an environment variable.
+
+  4. This then allows us to into our terminal window and install some settings Boto3 Django Storages
+
+  5. The Django Storages is passed into the installed apps in settings and also a custom_storage file is created to store credentials in environment variable. And once everything looks fine we can run python3 manage.py collectstatic. This will collect all the static files in our app including any changes that is made. N.B this command has to be run in the development(local) environment each time a change is been made in the static files/folder And your folder and files should display in your AWS S3 BUCKETS
+
+- ### Heroku Deployment
+  1. Set up local workspace for Heroku
+     - In terminal window of your IDE type: pip3 freeze -- local > requirements.txt. (The file is needed for Heroku to know which filed to install.)
+     - In termial window of your IDE type: python app.py > Procfile (The file is needed for Heroku to know which file is needed as entry point.)
+  2. Set up Heroku: create a Heroku account and create a new app and select your region.
+  3. Deployment method 'Github'
+     - Click on the Connect to GitHub section in the deploy tab in Heroku.
+       - Search your repository to connect with it.
+       - When your repository appears click on connect to connect your repository with the Heroku.
+    - Add PostgreSQL Database
+       - Click the resources tab.
+       - Under Add-ons seach for Heroku Postgres and then click on it when it appears.
+       - Select Plan name Hobby Dev - Free and then click Submit Order Form.
+    - Goto CLI
+       - pip3 install dj_database_url
+       - pip3 install psycopg2-binary
+       - pip3 freeze > requirements.txt
+    - Go to settings.py
+       - import OS
+       - import dj_database_url
+       - Add postgres url and comment sqlite
+    - Migrate data
+    - Dumpdata from sqlite and loaddata to postgresql
+    - pip3 install gunicorn
+    - pip3 freeze > requirements.txt
+    - Create Procfile
+    - Set DISABLE_COLLECTSTATIC=1
+    - In settings.py set ALLOWED_HOSTS
+    - Git add, commit and push.
+    - Git push heroku master
+    - Go to the settings app in Heroku and go to Config Vars. Click on Reveal Config Vars.Enter the variables.
+       - AWS_ACCESS_KEY_ID
+       - AWS_SECRET_ACCESS_KEY
+       - DATABASE_URL
+       - EMAIL_HOST_PASS
+       - EMAIL_HOST_USER
+       - SECRET_KEY
+       - STRIPE_PUBLIC_KEY
+       - STRIPE_SECRET_KEY
+       - STRIPE_WH_SECRET
+       - USE_AWS 
+  4. Automatic deployment: Go to the deploy tab in Heroku and scroll down to Aotmatic deployments. Click on Enable Automatic Deploys. By Manual deploy click on Deploy Branch.
+
+  Heroku will receive the code from Github and host the app using the required packages. Click on Open app in the right corner of your Heroku account. The app wil open and the live link is available from the address bar. 
+
+- ### Forking
+  If you wish to contribute to this website you can Fork it without affecting the main branch by following the procedure outlined below.
+  1. Go to the GitHub website and log in.
+  2. Locate the [Repository](https://github.com/RubySrivastava/ms4-fitnesswellness) used for this project.
+  3. On the right-hand side of the Repository name, you'll see the 'Fork' button. It's located next to the 'Star' and 'Watch' buttons.
+  4. This will create a copy in your personal repository.
+  5. Once you're finished making changes you can locate the 'New Pull Request' button just above the file listing in the original repository.
+
+- ### Cloning 
+  If you wish to clone or download this repository to your local device you can follow the procedure outlined below.
+  1. Go to the GitHub website and log in.
+  2. Locate the [Repository](https://github.com/RubySrivastava/ms4-fitnesswellness) used for this project.
+  3. Under the Repository name locate 'Clone or Download' button in green.
+  4. To clone the repository using HTTPS click the link under "Clone with HTTPS".
+  5. Open your Terminal and go to a directory where you want the cloned directory to be copied in.
+  6. Type `Git Clone` and paste the URL you copied from the GitHub.
+  7. To create your local clone press `Enter`
+
 
 <a name="bugs"></a>
 ## Known Bugs
