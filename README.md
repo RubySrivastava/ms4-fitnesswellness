@@ -235,4 +235,40 @@ This site also provides to create your own account and post recipe.
     <img src="readme/mockup/signup.png" />
     <img src="readme/mockup/login.png" />
     <img src="readme/mockup/profile.png" />
+
+
+<a name="technologies"></a>
+## Technologies Used
+
+### Languages Used
+
+  - [HTML5](https://en.wikipedia.org/wiki/HTML5)
+  - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+  - [JavaScript](https://en.wikipedia.org/wiki/Javascript)
+  - [Jquery](https://en.wikipedia.org/wiki/JQuery)
+  - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### Frameworks, Libraries and Programs Used
+
+  - [Bootstrap v4.5.0](https://getbootstrap.com/) - Used for the responsive layout as well as custom components such as header, footer, images, icons, grids, cards, and collapse element.
+  - [Font Awesome](https://fontawesome.com/) - Font Awesome is used to add social icons for socila links.
+  - [Google Fonts](https://fonts.google.com/) - Google Fonts is used to import 'Expo' and 'Rationale'.
+  - [Git](https://git-scm.com/) - Git is used to allow for tracking of any changes in the code and for the version control.
+  - [GitPod](https://www.gitpod.io/) - GitPod, connected to GitHub, hosted the coding space and allowed the project to be committed to the Github repository.
+  - [Github](https://github.com/) - GitHub is used to host the project files and publish the live website by using Git Pages.
+  - [Heroku](https://www.heroku.com/) - Heroku is the cloud platform to deploying the app.
+  - [Django](https://docs.djangoproject.com/en/3.2/) - Django is a high-level Python Web framework.
+  - [Google API](https://cloud.google.com/docs) - Google APIs are application programming interfaces (APIs) used for google map which is google service.
+  - [EmailJS](https://www.emailjs.com/) – Service that helps sending emails using client side technologies only. It only requires to connect EmailJS to one of the supported email services, create an email template, and use their Javascript library to trigger an email.
+  - [Stripe](https://stripe.com/) – Allows individuals and businesses to make and receive payments over the Internet.
+  - [AWS](http://aws.amazon.com/) - Amazon Web Services (AWS) is the most comprehensive and broadly adopted cloud platform used for S3 service.
+  - [Adobe Xd](https://www.adobe.com/ie/products/xd.html) - Adobe Xd is used to create mockups.
+  
+
+### Database
+
+  - [Heroku Postgres](https://www.postgresql.org/) - PostgreSQL is one of the world's most popular relational database management systems.
+  
+  
+  
     
