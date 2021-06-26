@@ -182,7 +182,7 @@ This site also provides to create your own account and post recipe.
     
     Colors #000 and #fff are used for text-color. 
       
-    <img src="readme/color/00000.png" height="40px" />
+    <img src="readme/color/000000.png" height="40px" />
     <img src="readme/color/ffffff.png" height="40px" />
 
     Color #54b848 is used for background of buttons/links and note of the page. 
@@ -221,8 +221,6 @@ This site also provides to create your own account and post recipe.
     -[Desktop Wireframes](https://xd.adobe.com/view/cfbc06d7-2a53-4f18-8dff-77452eaf2f42-9aef/)
     
     -[Mobile Wireframes]()
-
-    -[Ipad/Tablet Wireframes]()
 
 - #### Mockup made through original website 
     -[Wireframes](https://techsini.com/multi-mockup/index.php)
