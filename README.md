@@ -87,7 +87,7 @@ This site also provides to create your own account and post recipe.
 <a name="features"></a>
 ## Features
 
-### Existing Features
+### Existing Features & Django Apps
 
 - #### Common Features Across All Pages
 
@@ -102,6 +102,11 @@ This site also provides to create your own account and post recipe.
     - Accessibility
       - All Pages have a description in case the image link breaks as well as helps screen readers.
       - The home menu has aria-label added to let users with screen readers know where the toggleable menu is.
+
+    - Search Functionality
+      - A Search box is part of the top navigation and is, therefore, accessible on all pages.
+      - On mobile and ipad the search bar is collapsed under the search symbol.
+      - It allows customers to enter keywords associated with the products they wish to purchase.
     
     - Buttons/Links
       - All buttons are styled in the way to provide consistency across the page.
@@ -109,8 +114,16 @@ This site also provides to create your own account and post recipe.
       - All external links open in a new tab to allow the user to easily navigate back to the page. 
     
     - Toast messages
-      - Messages displayed at the right corner of the page to provide the user confirmation of actions like sign out, adding or editing products etc.
+      - They appear on every page whenever a certain action has been done by the user.
+      - Their purpose is to give messages displayed at the right corner of the page to provide the user confirmation of actions like sign out, adding or editing products etc.
 
+    - Django-allauth feature
+      - django-allauth is a Python package. It provides a set of features such as signup, login, logout and password change and so many.
+      - After signing up, a verification e-mail is sent to the registered e-mail to confirm it. Once confirmed, the user can log in with their credentials and access the profiles app.
+    
+    - Automatic e-mails
+      - An account is working for this project and used as a sender for all verification, reset and confirmation e-mails.
+    
     - Responsiveness
       - All Pages are responsive on different viewport size.
 
@@ -119,10 +132,20 @@ This site also provides to create your own account and post recipe.
       - All content has been spaced out and aligned to the center.
       - There are social links and when hovered over, it changed the color.
 
+- #### Django App 
+    - home 
+    - gym
+    - products
+    - bag
+    - checkout
+    - profiles
+    - subscribe
+    - contact
+    
 - #### Specific to Pages
 
-    - Home Page
-        - This page has header, footer and search box. This page has subsciber link for newsletter. This page has special offer link which directs to train page.Page contains testimonials of users with their names too. The header has navigation bar and footer has copyright and social links.The image brings the user's attention and inviting the user to explore the website.
+    - Home Page 
+        - This page has header, footer and search box. This page has subsciber link for newsletter. This page has special offer link which directs to train page.Page contains testimonials of users with their names too.The image brings the user's attention and inviting the user to explore the website.
     
     - About Page
         - This page contains the information of gym.
@@ -162,6 +185,9 @@ This site also provides to create your own account and post recipe.
 
     - Checkout Success Page
         - This page has confirmation message of your payment for order. This page also contains orders and user deatils.
+
+    - Subscribe Page
+        - This page has subscribe form for getting the newsletter. Just by entering email address you become subscriber.
 
 ### Future Features
   - Create a way for the user to rate the website without having to type up feedback.
