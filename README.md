@@ -41,9 +41,10 @@ It is designed to be responsive on all devices and easy to navigate for users an
 
 ### User Stories
 
-This website gives the information about gym services and their merchandise. 
-This website gives a compete package of fittness and merchandise, one place where you can purchase the goods and subscribe teh service. 
-This website gives details on nutrition product, apparel and gym accessories.
+This website will give information to the users about the gym and their facilities. 
+It tells about how to being healthy with fitness activity. 
+It provides the different offer on landing page which attract users which gives benefit to both user (Good health) and gym owner (Profitability).
+In this website users can check and purchase gym products with safe and secure payment option.
 
 - #### Generic User
     1. I want to easily understand the purpose and the layout of the site without additional instructions needed.
