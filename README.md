@@ -41,10 +41,9 @@ It is designed to be responsive on all devices and easy to navigate for users an
 
 ### User Stories
 
-This website gives the information about different recipe with cooking method posted by site owner and other users. 
-Any food lover who wants to come and explore different taste then this website is perfect for him.
-In this website he gets the information about different recipe based on category and can also post his recipe.
-This site also provides to create your own account and post recipe.
+This website gives the information about gym services and their merchandise. 
+This website gives a compete package of fittness and merchandise, one place where you can purchase the goods and subscribe teh service. 
+This website gives details on nutrition product, apparel and gym accessories.
 
 - #### Generic User
     1. I want to easily understand the purpose and the layout of the site without additional instructions needed.
