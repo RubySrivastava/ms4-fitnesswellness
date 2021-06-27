@@ -246,7 +246,7 @@ In this website users can check and purchase gym products with safe and secure p
 - #### Mockups were created using Adobe Xd.
     -[Desktop Wireframes](https://xd.adobe.com/view/cfbc06d7-2a53-4f18-8dff-77452eaf2f42-9aef/)
     
-    -[Mobile Wireframes]()
+    -[Mobile Wireframes](https://xd.adobe.com/view/71020ccd-d839-46ff-a08e-70ce4c856c3b-2451/)
 
 - #### Mockup made through original website 
     -[Wireframes](https://techsini.com/multi-mockup/index.php)
