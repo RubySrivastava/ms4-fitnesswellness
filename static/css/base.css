@@ -612,7 +612,7 @@ a {
     top: 90px;
 }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 515px) {
   .navbar a {
     float: none;
     display: block;
@@ -654,10 +654,19 @@ a {
       padding: 0px;
   }
   h4 {
-      font-size: 20px;
+      font-size: 18px;
   }
   .signup-container{
       margin: 00px;
+  }
+  .btn {
+      font-size: 12px;
+  }
+  .increment-qty {
+      padding: 5px;
+  }
+  .decrement-qty {
+      padding: 5px;
   }
 }
   
@@ -672,19 +681,19 @@ a {
       font-size: 15px;
   }
   .gym-header {
-    font-size: 15px;
+    font-size: 14px;
   }
   .gym-para {
-    font-size: 12px;
+    font-size: 10px;
   }
   .header-text {
-      font-size: 17px;
+      font-size: 14px;
   }
   .para-text {
-      font-size: 12px;
+      font-size: 10px;
   }
   .block-text {
-      font-size: 15px;
+      font-size: 14px;
   }
   .subscribe-form {
       font-size: 12px;
@@ -694,5 +703,14 @@ a {
   }
   .icon-arrow {
       font-size: 17px;
+  }
+  .btn {
+      font-size: 10px;
+  }
+  .increment-qty {
+      padding: 2px;
+  }
+  .decrement-qty {
+      padding: 2px;
   }
 }
