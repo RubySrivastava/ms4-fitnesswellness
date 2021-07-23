@@ -15,6 +15,8 @@
   - All external links is tested to make sure they open up the correct pages in new tabs.
   - All internal links is tested to make sure that all pages are correctly connected.
     
+## Validator
+
 ### CSS3 validator 
 Validate by direct input 
     [CSS Validator](https://jigsaw.w3.org/css-validator/)
