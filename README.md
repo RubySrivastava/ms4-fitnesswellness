@@ -262,6 +262,9 @@ In this website users can check and purchase gym products with safe and secure p
     <img src="readme/mockup/login.png" />
     <img src="readme/mockup/profile.png" />
 
+### Data Schema
+<img src="readme/data_schema.png" />
+
 
 <a name="technologies"></a>
 ## Technologies Used
