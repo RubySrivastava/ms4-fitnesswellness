@@ -245,6 +245,8 @@ In this website users can check and purchase gym products with safe and secure p
 
 - #### Mockups were created using Adobe Xd.
     -[Desktop Wireframes](https://xd.adobe.com/view/cfbc06d7-2a53-4f18-8dff-77452eaf2f42-9aef/)
+
+    -[Ipad/Tablet Wireframes](https://xd.adobe.com/view/31f09f66-7c6d-47e4-8ad9-6bd0f8035361-64a3/)
     
     -[Mobile Wireframes](https://xd.adobe.com/view/71020ccd-d839-46ff-a08e-70ce4c856c3b-2451/)
 
