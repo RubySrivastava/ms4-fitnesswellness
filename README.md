@@ -311,7 +311,7 @@ In this website users can check and purchase gym products with safe and secure p
 - ### AWS 
   1. Created a new Amazon account and connect to amazon service AWS3 account are cloud based serve where the project media and staicfiles will be stored unto. At first, we locate S3 on amazon service then we create a bucket. While creating the bucket on S3, the note that public access must be all switched off to allow access for users.
 
-  2. Once we've created the bucket, we now can now click on it's properties and enable the Static Website Hosting option, so it can serve the purpose of hosting our static files, you will need to imput an index.html and error.html before saving. Then we go into the created bucket Permissions and click into CORS configuration, this part already have a prefilled default config, All that is needed is just to write the default code and save the config.
+  2. Once we've created the bucket, we now can now click on it's properties and enable the Static Website Hosting option, so it can serve the purpose of hosting our static files, you will need to input an index.html and error.html before saving. Then we go into the created bucket Permissions and click into CORS configuration, this part already have a prefilled default config, All that is needed is just to write the default code and save the config.
 
   3. Then we go into the bucket policy to allows access to the contents across all web and inside this we will put in here some code including arn address displayed at the top of the heading. Then we go into amazon IAM to allow identity and access management of our stored files and folder. In the IAM service, we add a new group for our application and then we set the policies to ALL Then it generates a downlaodable zip file containing ID and KEY for us to use for the newly added group. This ID and KEY as to be stored in an environment variable.
 
@@ -418,7 +418,7 @@ In this website users can check and purchase gym products with safe and secure p
 
 ### Acknowledgements :
 
-- I was inspired by the people of surrounding me who wants to be fit and gyms are in thier regular routine.
+- I was inspired by the people of surrounding me who wants to be fit and gyms are in their regular routine.
 - Thanks to my fellow students and tutors on slack channel who helped me in some way.
 - Thanks to my reviewer who review it and help me to fix any error and bugs.
 - Thanks to my mentor Maranatha Ilesalnmi who helped me throughout the project and gived me important suggestions and feedback of my work.
